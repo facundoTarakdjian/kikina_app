@@ -1,0 +1,1860 @@
+{
+ "niveles": {
+  "1": "Chispa",
+  "2": "Calentito",
+  "3": "Fuego",
+  "4": "Sin discreción"
+ },
+ "dados": {
+  "accion": [
+   {
+    "nivel_min": 1,
+    "texto": "Besá"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "Acariciá"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "Soplá suavecito en"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "Dale besitos en"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "Susurrale algo lindo cerca de"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "Besá lento"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "Recorré con los dedos"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "Masajeá"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "Dale mordisquitos suaves en"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "Rozá con los labios"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "Besá con ganas"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "Acariciá por debajo de la ropa"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "Recorré con la lengua"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "Sacale una prenda y besá"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "Masajeá con aceite"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "Hacé lo que quieras con"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "Usá la boca en"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "Provocá sin parar"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "Elegí vos cómo jugar con"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "Volvé loco/a al otro tocando"
+   }
+  ],
+  "zona": [
+   {
+    "nivel_min": 1,
+    "texto": "la frente"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "la mejilla"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "las manos"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "el cuello"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "la oreja"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "los hombros"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "la espalda"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "los labios"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "la nuca"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "la panza"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "la cintura"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "las piernas"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "la espalda baja"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "el pecho"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "los muslos"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "la cola"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "debajo del ombligo"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "donde más le guste"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "la zona que elija el otro"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "todo el cuerpo"
+   }
+  ],
+  "modo": [
+   {
+    "nivel_min": 1,
+    "texto": "durante 10 segundos"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "durante 30 segundos"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "mirándose a los ojos"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "en silencio total"
+   },
+   {
+    "nivel_min": 1,
+    "texto": "muy, muy lento"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "durante 1 minuto"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "con los ojos cerrados"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "con la luz apagada"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "sin usar las manos"
+   },
+   {
+    "nivel_min": 2,
+    "texto": "como diga el otro"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "durante 2 minutos"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "con los ojos vendados"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "con algo frío"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "sin que el otro te pueda tocar"
+   },
+   {
+    "nivel_min": 3,
+    "texto": "susurrando lo que vas a hacer"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "hasta que el otro pida más"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "el tiempo que quieras"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "vos elegís cómo"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "sin apuro y sin reglas"
+   },
+   {
+    "nivel_min": 4,
+    "texto": "y después cambian de rol"
+   }
+  ]
+ },
+ "cartas": [
+  {
+   "id": 1,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué fue lo primero que te gustó físicamente del otro?"
+  },
+  {
+   "id": 2,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Cuál fue el beso nuestro que más te acordás?"
+  },
+  {
+   "id": 3,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué prenda del otro te encanta cómo le queda?"
+  },
+  {
+   "id": 4,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué cosa del otro te parece sexy y nunca se lo dijiste?"
+  },
+  {
+   "id": 5,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿En qué momento de hoy pensaste en el otro de esta forma?"
+  },
+  {
+   "id": 6,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué perfume u olor del otro te pierde?"
+  },
+  {
+   "id": 7,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué parte del cuerpo del otro te gusta mirar cuando no se da cuenta?"
+  },
+  {
+   "id": 8,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Cuál fue la primera vez que quisiste besar al otro?"
+  },
+  {
+   "id": 9,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué mensaje del otro te dejó pensando más de la cuenta?"
+  },
+  {
+   "id": 10,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué te gusta que te haga el otro cuando están en el sillón?"
+  },
+  {
+   "id": 11,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué ropa te gustaría que el otro use más seguido?"
+  },
+  {
+   "id": 12,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué cosa chiquita del otro te dan ganas de comerle a besos?"
+  },
+  {
+   "id": 13,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Cuál es tu recuerdo más tierno de los dos solos?"
+  },
+  {
+   "id": 14,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "Del 1 al 10, ¿cuántas ganas tenés ahora de besar al otro?"
+  },
+  {
+   "id": 15,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué te gusta que el otro te diga al oído?"
+  },
+  {
+   "id": 16,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Cuál fue la date en la que más ganas tenías de que termine para estar solos?"
+  },
+  {
+   "id": 17,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo más lindo que te dijo el otro mirándote a los ojos?"
+  },
+  {
+   "id": 18,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué te pone nervioso/a (para bien) del otro?"
+  },
+  {
+   "id": 19,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Cuál es tu foto favorita del otro?"
+  },
+  {
+   "id": 20,
+   "nivel": 1,
+   "tipo": "verdad",
+   "texto": "¿Qué canción te hace pensar en el otro de forma picante?"
+  },
+  {
+   "id": 21,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Dale al otro el beso más lento que puedas."
+  },
+  {
+   "id": 22,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Besale el cuello durante 20 segundos."
+  },
+  {
+   "id": 23,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Susurrale al oído qué es lo que más te gusta de él/ella."
+  },
+  {
+   "id": 24,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Mirense a los ojos 30 segundos sin reírse."
+  },
+  {
+   "id": 25,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Dale un masaje de hombros de 1 minuto."
+  },
+  {
+   "id": 26,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Besale cada uno de los dedos de una mano."
+  },
+  {
+   "id": 27,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Abrazalo/a por la espalda y quedate así 30 segundos."
+  },
+  {
+   "id": 28,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Hacele un cumplido sobre su cuerpo, mirándolo/a a los ojos."
+  },
+  {
+   "id": 29,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Dale 10 besos en lugares distintos de la cara."
+  },
+  {
+   "id": 30,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Acariciale el pelo hasta que cierre los ojos."
+  },
+  {
+   "id": 31,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Elegí una canción y bailen pegados."
+  },
+  {
+   "id": 32,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Dale un beso en la frente, otro en la nariz y otro en la boca."
+  },
+  {
+   "id": 33,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Recorré su espalda con un dedo, despacito."
+  },
+  {
+   "id": 34,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Decile tres cosas que te gustan de cómo besa."
+  },
+  {
+   "id": 35,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Besalo/a como si fuera la primera vez."
+  },
+  {
+   "id": 36,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Sentate en sus piernas durante la próxima carta."
+  },
+  {
+   "id": 37,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Soplale suavemente el cuello."
+  },
+  {
+   "id": 38,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Tomale la mano y besale la muñeca."
+  },
+  {
+   "id": 39,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Dale un beso donde el otro elija (por encima de la ropa)."
+  },
+  {
+   "id": 40,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Escribile con el dedo en la espalda una palabra; tiene que adivinarla."
+  },
+  {
+   "id": 41,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Acariciale la cara con los ojos cerrados como si lo/la estuvieras dibujando."
+  },
+  {
+   "id": 42,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Besale la oreja y decile algo que lo/la haga sonreír."
+  },
+  {
+   "id": 43,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Hacé un piropo bien argentino y bien malo; si se ríe, tomás otra carta."
+  },
+  {
+   "id": 44,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Dale un abrazo de 20 segundos sin soltar."
+  },
+  {
+   "id": 45,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Mordele el labio de abajo, suavecito."
+  },
+  {
+   "id": 46,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Elegí un lugar de su cara y besalo durante 15 segundos."
+  },
+  {
+   "id": 47,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Hacele cosquillas en la nuca con la punta de los dedos."
+  },
+  {
+   "id": 48,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Decile qué es lo que más te gustó de hoy de él/ella."
+  },
+  {
+   "id": 49,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Besale los hombros."
+  },
+  {
+   "id": 50,
+   "nivel": 1,
+   "tipo": "reto",
+   "texto": "Contale al oído qué te gustaría que pase esta noche."
+  },
+  {
+   "id": 51,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo que más te gusta que te haga el otro?"
+  },
+  {
+   "id": 52,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Dónde te gustaría que te bese ahora mismo?"
+  },
+  {
+   "id": 53,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué parte de tu cuerpo te gusta que te toquen más?"
+  },
+  {
+   "id": 54,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Cuál fue la vez que más te costó disimular las ganas en público?"
+  },
+  {
+   "id": 55,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué ropa interior del otro es tu preferida?"
+  },
+  {
+   "id": 56,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué lugar raro te gustaría estrenar con el otro?"
+  },
+  {
+   "id": 57,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué es algo que te prende y el otro no sabe?"
+  },
+  {
+   "id": 58,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Preferís que te provoquen despacio o ir directo?"
+  },
+  {
+   "id": 59,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué recuerdo picante nuestro te viene a la cabeza seguido?"
+  },
+  {
+   "id": 60,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué te gustaría que el otro te haga más seguido?"
+  },
+  {
+   "id": 61,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Cuál es el horario que más te gusta para estar juntos?"
+  },
+  {
+   "id": 62,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué mirada del otro te desarma?"
+  },
+  {
+   "id": 63,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué te gustaría probar con el otro este mes?"
+  },
+  {
+   "id": 64,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué fue lo más atrevido que pensaste hacer y no hiciste?"
+  },
+  {
+   "id": 65,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué canción pondrías para esta noche?"
+  },
+  {
+   "id": 66,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo más sexy que te dijo el otro?"
+  },
+  {
+   "id": 67,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Hay algo que quisiste pedir y te dio vergüenza?"
+  },
+  {
+   "id": 68,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué te gusta más: provocar o que te provoquen?"
+  },
+  {
+   "id": 69,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué día de la semana es tu preferido para \"lo nuestro\"?"
+  },
+  {
+   "id": 70,
+   "nivel": 2,
+   "tipo": "verdad",
+   "texto": "¿Qué parte del cuerpo del otro besarías sin parar?"
+  },
+  {
+   "id": 71,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Sacale una prenda, la que vos elijas."
+  },
+  {
+   "id": 72,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Besale el cuello bajando hasta el hombro."
+  },
+  {
+   "id": 73,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Dale un masaje de espalda de 2 minutos, sin hablar."
+  },
+  {
+   "id": 74,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Besalo/a sin usar las manos durante 30 segundos."
+  },
+  {
+   "id": 75,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Vendale los ojos y besale tres lugares; tiene que adivinar dónde."
+  },
+  {
+   "id": 76,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Recorré su cintura con las manos, despacio."
+  },
+  {
+   "id": 77,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Susurrale exactamente qué le vas a hacer después."
+  },
+  {
+   "id": 78,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Hacele un baile de 30 segundos."
+  },
+  {
+   "id": 79,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Besale la panza."
+  },
+  {
+   "id": 80,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Dale besos subiendo por el brazo hasta el cuello."
+  },
+  {
+   "id": 81,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Quedate en ropa interior hasta la próxima carta."
+  },
+  {
+   "id": 82,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Acariciale las piernas durante 1 minuto."
+  },
+  {
+   "id": 83,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Mandale un mensaje picante como si no estuvieran juntos, y que lo lea en voz alta."
+  },
+  {
+   "id": 84,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Besalo/a contra la pared."
+  },
+  {
+   "id": 85,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Dale besos en la nuca mientras le acariciás la espalda."
+  },
+  {
+   "id": 86,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Elegí la próxima carta por el otro."
+  },
+  {
+   "id": 87,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Tocalo/a solo con la punta de los dedos durante 1 minuto."
+  },
+  {
+   "id": 88,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Hacé que el otro se quede quieto mientras lo/la besás; si se mueve, empezás de nuevo."
+  },
+  {
+   "id": 89,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Besale la espalda baja."
+  },
+  {
+   "id": 90,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Decile al oído tres cosas que te gustan de su cuerpo."
+  },
+  {
+   "id": 91,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Dale el beso más largo de la noche."
+  },
+  {
+   "id": 92,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Sentate encima y no lo/la dejes moverse durante 30 segundos."
+  },
+  {
+   "id": 93,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Sacate una prenda vos, muy despacio."
+  },
+  {
+   "id": 94,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Masajeale los pies (sí, también cuenta)."
+  },
+  {
+   "id": 95,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Rozale los labios sin besarlo/a hasta que no aguante más."
+  },
+  {
+   "id": 96,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Elegí un lugar del cuerpo del otro y dedicale 1 minuto entero."
+  },
+  {
+   "id": 97,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Mostrale con un beso cómo te gustaría que te besen."
+  },
+  {
+   "id": 98,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Pasale un hielo por el cuello, suave."
+  },
+  {
+   "id": 99,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Acercate como para besarlo/a y alejate tres veces seguidas."
+  },
+  {
+   "id": 100,
+   "nivel": 2,
+   "tipo": "reto",
+   "texto": "Dale besos por la cintura mientras lo/la abrazás."
+  },
+  {
+   "id": 101,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Cuál es tu fantasía más tranqui que nunca contaste?"
+  },
+  {
+   "id": 102,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo que más te gusta de estar con el otro en la cama?"
+  },
+  {
+   "id": 103,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Cuál fue nuestra mejor noche?"
+  },
+  {
+   "id": 104,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué cosa te gustaría que el otro haga sin que tengas que pedírsela?"
+  },
+  {
+   "id": 105,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué posición es tu preferida?"
+  },
+  {
+   "id": 106,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué lugar de la casa todavía no estrenaron y te gustaría?"
+  },
+  {
+   "id": 107,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué te gustaría que el otro te diga en el momento?"
+  },
+  {
+   "id": 108,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Luces prendidas o apagadas? ¿Por qué?"
+  },
+  {
+   "id": 109,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué parte de los juegos previos es tu favorita?"
+  },
+  {
+   "id": 110,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo que más te prende de cómo el otro te mira?"
+  },
+  {
+   "id": 111,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué querés que pase hoy y todavía no dijiste?"
+  },
+  {
+   "id": 112,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Hay algo que te gustaría que hagan más lento? ¿O más rápido?"
+  },
+  {
+   "id": 113,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué escapada romántica te imaginás solo para esto?"
+  },
+  {
+   "id": 114,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué prenda te gustaría que el otro te saque con los dientes?"
+  },
+  {
+   "id": 115,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué te gustaría probar con un antifaz?"
+  },
+  {
+   "id": 116,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué fue lo más atrevido que hicimos?"
+  },
+  {
+   "id": 117,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué te imaginás cuando no estamos juntos?"
+  },
+  {
+   "id": 118,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué sonido del otro te vuelve loco/a?"
+  },
+  {
+   "id": 119,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Cómo sería tu noche perfecta, paso a paso?"
+  },
+  {
+   "id": 120,
+   "nivel": 3,
+   "tipo": "verdad",
+   "texto": "¿Qué juego te gustaría inventar para nosotros?"
+  },
+  {
+   "id": 121,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Sacale dos prendas a elección."
+  },
+  {
+   "id": 122,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Vendale los ojos y hacé lo que quieras durante 1 minuto."
+  },
+  {
+   "id": 123,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Recorré su cuerpo con besos de arriba abajo."
+  },
+  {
+   "id": 124,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Dale un masaje con aceite de 3 minutos."
+  },
+  {
+   "id": 125,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Sacale una prenda usando solo la boca."
+  },
+  {
+   "id": 126,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "El otro no puede tocarte durante 2 minutos; vos sí."
+  },
+  {
+   "id": 127,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Besale los muslos."
+  },
+  {
+   "id": 128,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Elegí una posición para más tarde y anunciala."
+  },
+  {
+   "id": 129,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Desvestilo/a muy lento, prenda por prenda."
+  },
+  {
+   "id": 130,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Pasá un hielo por donde quieras."
+  },
+  {
+   "id": 131,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Susurrale tu fantasía al oído."
+  },
+  {
+   "id": 132,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Hacele un striptease de una canción entera."
+  },
+  {
+   "id": 133,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Besale el pecho durante 1 minuto."
+  },
+  {
+   "id": 134,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Acariciale todo el cuerpo con los ojos cerrados."
+  },
+  {
+   "id": 135,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Dejá que el otro te guíe la mano a donde quiera."
+  },
+  {
+   "id": 136,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Besalo/a por todo el cuerpo sin usar las manos."
+  },
+  {
+   "id": 137,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Quedate quieto/a: el otro hace lo que quiera durante 2 minutos."
+  },
+  {
+   "id": 138,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Elegí un lugar de la casa para la próxima carta."
+  },
+  {
+   "id": 139,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Dale besos lentos subiendo desde las rodillas."
+  },
+  {
+   "id": 140,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Hacé que te pida que sigas."
+  },
+  {
+   "id": 141,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Dale besos en el orden que el otro te vaya diciendo."
+  },
+  {
+   "id": 142,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Provocalo/a durante 1 minuto sin llegar a besarlo/a."
+  },
+  {
+   "id": 143,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Mostrale cómo te gusta que te toquen."
+  },
+  {
+   "id": 144,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Duchense juntos (o prométanlo para después)."
+  },
+  {
+   "id": 145,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Besale el cuello mientras le sacás una prenda."
+  },
+  {
+   "id": 146,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Elegí la música y que el otro baile para vos."
+  },
+  {
+   "id": 147,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Sacate la ropa vos y que el otro solo mire."
+  },
+  {
+   "id": 148,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Hacele un masaje usando todo el cuerpo."
+  },
+  {
+   "id": 149,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Dale besos en la espalda bajando hasta la cintura."
+  },
+  {
+   "id": 150,
+   "nivel": 3,
+   "tipo": "reto",
+   "texto": "Inventá vos la próxima carta."
+  },
+  {
+   "id": 151,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué querés que te haga ahora mismo? Con detalle."
+  },
+  {
+   "id": 152,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo que más te gusta que te haga el otro con la boca?"
+  },
+  {
+   "id": 153,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué te gustaría probar esta noche que nunca hicimos?"
+  },
+  {
+   "id": 154,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Cuál es tu fantasía número uno con el otro?"
+  },
+  {
+   "id": 155,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo que más te prende de su cuerpo?"
+  },
+  {
+   "id": 156,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué rol te gustaría jugar?"
+  },
+  {
+   "id": 157,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Dónde es el lugar más arriesgado (pero privado) donde lo harías?"
+  },
+  {
+   "id": 158,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué te gustaría que el otro te pida?"
+  },
+  {
+   "id": 159,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo que mejor hace el otro?"
+  },
+  {
+   "id": 160,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué juguete te animarías a probar?"
+  },
+  {
+   "id": 161,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué posición nueva te gustaría estrenar?"
+  },
+  {
+   "id": 162,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo más intenso que sentiste con el otro?"
+  },
+  {
+   "id": 163,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué te gustaría que dure más?"
+  },
+  {
+   "id": 164,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué es lo primero que hacés cuando queda la casa sola?"
+  },
+  {
+   "id": 165,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué te imaginás cuando te manda una Discreción?"
+  },
+  {
+   "id": 166,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué mensaje te gustaría recibir mañana en el trabajo?"
+  },
+  {
+   "id": 167,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué te gusta escuchar en el momento?"
+  },
+  {
+   "id": 168,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Preferís tomar el control o que lo tomen?"
+  },
+  {
+   "id": 169,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Cuál es tu momento preferido de la noche?"
+  },
+  {
+   "id": 170,
+   "nivel": 4,
+   "tipo": "verdad",
+   "texto": "¿Qué cosa no hicimos todavía y querés que hagamos ya?"
+  },
+  {
+   "id": 171,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Elegí qué le hacés, sin reglas, durante 3 minutos."
+  },
+  {
+   "id": 172,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Que el otro elija la posición y no puedas decir que no (dentro de lo que les gusta)."
+  },
+  {
+   "id": 173,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Usá la boca donde quieras durante 2 minutos."
+  },
+  {
+   "id": 174,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Tomá el control total hasta la próxima carta."
+  },
+  {
+   "id": 175,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Dejá que el otro tome el control total hasta la próxima carta."
+  },
+  {
+   "id": 176,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Juego de roles: inventen quiénes son y cómo se conocen."
+  },
+  {
+   "id": 177,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Sacale toda la ropa que le quede."
+  },
+  {
+   "id": 178,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Hacé lo que más le gusta, sin que te lo pida."
+  },
+  {
+   "id": 179,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Elegí un lugar nuevo de la casa y vayan ya."
+  },
+  {
+   "id": 180,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Llevalo/a al límite y pará; repetí dos veces."
+  },
+  {
+   "id": 181,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Vendale los ojos y sorprendelo/a como quieras."
+  },
+  {
+   "id": 182,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Contale al oído lo que le vas a hacer y hacelo."
+  },
+  {
+   "id": 183,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Hacé que el otro te diga qué quiere, con palabras."
+  },
+  {
+   "id": 184,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Elegí la próxima Discreción que te va a mandar."
+  },
+  {
+   "id": 185,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Juguemos a que no se pueden hacer ruido."
+  },
+  {
+   "id": 186,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "El otro se queda quieto; vos hacés todo."
+  },
+  {
+   "id": 187,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Cambien de posición cada 1 minuto hasta la próxima carta."
+  },
+  {
+   "id": 188,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Hacelo/a esperar 1 minuto con algo que le encante."
+  },
+  {
+   "id": 189,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Elegí entre: ducha, sillón o cama. Ya."
+  },
+  {
+   "id": 190,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Esta carta es comodín: pidan lo que quieran."
+  },
+  {
+   "id": 191,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Proponé una fantasía; si el otro dice que sí, se hace hoy."
+  },
+  {
+   "id": 192,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Mirense a los ojos todo el tiempo hasta la próxima carta."
+  },
+  {
+   "id": 193,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Usen hielo y calor (algo tibio) a la vez."
+  },
+  {
+   "id": 194,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Dale placer sin usar las manos."
+  },
+  {
+   "id": 195,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Guiá sus manos donde quieras."
+  },
+  {
+   "id": 196,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Probá algo que salió en \"¿Lo probamos?\" con un sí de los dos."
+  },
+  {
+   "id": 197,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Hacé tu movimiento estrella."
+  },
+  {
+   "id": 198,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Lento, muy lento, durante 3 minutos."
+  },
+  {
+   "id": 199,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "El que pierde la próxima partida de truco paga con esto: pónganse de acuerdo qué."
+  },
+  {
+   "id": 200,
+   "nivel": 4,
+   "tipo": "reto",
+   "texto": "Terminen la noche como el otro elija."
+  }
+ ],
+ "lo_probamos": [
+  {
+   "id": 1,
+   "nivel": 1,
+   "texto": "Bañarnos juntos a la luz de las velas"
+  },
+  {
+   "id": 2,
+   "nivel": 1,
+   "texto": "Una noche de masajes con aceite, sin apuro"
+  },
+  {
+   "id": 3,
+   "nivel": 1,
+   "texto": "Un picnic en casa en ropa interior"
+  },
+  {
+   "id": 4,
+   "nivel": 1,
+   "texto": "Una cita en la que ninguno usa el celular y todo es coqueteo"
+  },
+  {
+   "id": 5,
+   "nivel": 1,
+   "texto": "Bailar lento en casa con la luz apagada"
+  },
+  {
+   "id": 6,
+   "nivel": 1,
+   "texto": "Dormir una siesta abrazados sin ropa"
+  },
+  {
+   "id": 7,
+   "nivel": 1,
+   "texto": "Mandarnos mensajes picantes durante el día antes de vernos"
+  },
+  {
+   "id": 8,
+   "nivel": 1,
+   "texto": "Escribirnos una carta picante a mano"
+  },
+  {
+   "id": 9,
+   "nivel": 1,
+   "texto": "Hacer un desayuno en la cama que termine en otra cosa"
+  },
+  {
+   "id": 10,
+   "nivel": 1,
+   "texto": "Una noche de besos sin pasar a nada más (a ver quién aguanta)"
+  },
+  {
+   "id": 11,
+   "nivel": 1,
+   "texto": "Mirar una peli romántica y portarnos mal"
+  },
+  {
+   "id": 12,
+   "nivel": 1,
+   "texto": "Un baño de inmersión con espuma y vino"
+  },
+  {
+   "id": 13,
+   "nivel": 1,
+   "texto": "Una noche de hotel en la ciudad, solo para nosotros"
+  },
+  {
+   "id": 14,
+   "nivel": 1,
+   "texto": "Que uno elija toda la noche sin decir nada antes"
+  },
+  {
+   "id": 15,
+   "nivel": 1,
+   "texto": "Ver el atardecer y volver corriendo a casa"
+  },
+  {
+   "id": 16,
+   "nivel": 1,
+   "texto": "Un juego de verdad o reto con vino"
+  },
+  {
+   "id": 17,
+   "nivel": 1,
+   "texto": "Vestirnos lindos para una cena en casa"
+  },
+  {
+   "id": 18,
+   "nivel": 1,
+   "texto": "Hacernos un masaje de pies mutuo"
+  },
+  {
+   "id": 19,
+   "nivel": 1,
+   "texto": "Mandarnos una Discreción al mismo tiempo"
+  },
+  {
+   "id": 20,
+   "nivel": 1,
+   "texto": "Desvestirnos el uno al otro muy despacio"
+  },
+  {
+   "id": 21,
+   "nivel": 2,
+   "texto": "Usar un antifaz"
+  },
+  {
+   "id": 22,
+   "nivel": 2,
+   "texto": "Un striptease de una canción entera"
+  },
+  {
+   "id": 23,
+   "nivel": 2,
+   "texto": "Probar ropa interior nueva elegida por el otro"
+  },
+  {
+   "id": 24,
+   "nivel": 2,
+   "texto": "Masaje con aceite de cuerpo entero"
+  },
+  {
+   "id": 25,
+   "nivel": 2,
+   "texto": "Usar hielo"
+  },
+  {
+   "id": 26,
+   "nivel": 2,
+   "texto": "Hacerlo en otro ambiente de la casa"
+  },
+  {
+   "id": 27,
+   "nivel": 2,
+   "texto": "Una escapada de fin de semana con este objetivo"
+  },
+  {
+   "id": 28,
+   "nivel": 2,
+   "texto": "Una ducha juntos más larga de lo normal"
+  },
+  {
+   "id": 29,
+   "nivel": 2,
+   "texto": "Dejar que el otro mande toda la noche"
+  },
+  {
+   "id": 30,
+   "nivel": 2,
+   "texto": "Jugar a no hacer ruido"
+  },
+  {
+   "id": 31,
+   "nivel": 2,
+   "texto": "Un juego de dados de Discreción en nivel Fuego"
+  },
+  {
+   "id": 32,
+   "nivel": 2,
+   "texto": "Probar una posición nueva elegida al azar"
+  },
+  {
+   "id": 33,
+   "nivel": 2,
+   "texto": "Velas y música elegida para la ocasión"
+  },
+  {
+   "id": 34,
+   "nivel": 2,
+   "texto": "Hacerlo a la mañana antes de arrancar el día"
+  },
+  {
+   "id": 35,
+   "nivel": 2,
+   "texto": "Mensajes picantes en una reunión aburrida"
+  },
+  {
+   "id": 36,
+   "nivel": 2,
+   "texto": "Fotos picantes solo para nosotros (bien Discreción)"
+  },
+  {
+   "id": 37,
+   "nivel": 2,
+   "texto": "Un mapa: marcar en el cuerpo dónde te gusta que te toquen"
+  },
+  {
+   "id": 38,
+   "nivel": 2,
+   "texto": "Juego de 'frío o caliente' con besos"
+  },
+  {
+   "id": 39,
+   "nivel": 2,
+   "texto": "Una noche sin luz, solo velas"
+  },
+  {
+   "id": 40,
+   "nivel": 2,
+   "texto": "Probar aceites o cremas de masaje con aroma"
+  },
+  {
+   "id": 41,
+   "nivel": 3,
+   "texto": "Hacerlo con música elegida por el otro, de principio a fin"
+  },
+  {
+   "id": 42,
+   "nivel": 3,
+   "texto": "Juego de roles: desconocidos en un bar"
+  },
+  {
+   "id": 43,
+   "nivel": 3,
+   "texto": "Juego de roles: inventen sus personajes"
+  },
+  {
+   "id": 44,
+   "nivel": 3,
+   "texto": "Un juguete para pareja"
+  },
+  {
+   "id": 45,
+   "nivel": 3,
+   "texto": "Hacerlo en el auto (en un lugar privado)"
+  },
+  {
+   "id": 46,
+   "nivel": 3,
+   "texto": "Una noche entera sin apuro, todo el tiempo del mundo"
+  },
+  {
+   "id": 47,
+   "nivel": 3,
+   "texto": "Grabar un audio picante para el otro"
+  },
+  {
+   "id": 48,
+   "nivel": 3,
+   "texto": "Que uno no pueda tocar y el otro sí"
+  },
+  {
+   "id": 49,
+   "nivel": 3,
+   "texto": "Hacer una lista de fantasías y cumplir una"
+  },
+  {
+   "id": 50,
+   "nivel": 3,
+   "texto": "Probar el Kamasutra: una posición por semana"
+  },
+  {
+   "id": 51,
+   "nivel": 3,
+   "texto": "Un fin de semana de 'sí a todo' (dentro de lo que les gusta)"
+  },
+  {
+   "id": 52,
+   "nivel": 3,
+   "texto": "Hacerlo en el balcón o terraza (privado)"
+  },
+  {
+   "id": 53,
+   "nivel": 3,
+   "texto": "Juego de llevar al límite y frenar"
+  },
+  {
+   "id": 54,
+   "nivel": 3,
+   "texto": "Hacerlo frente a un espejo"
+  },
+  {
+   "id": 55,
+   "nivel": 3,
+   "texto": "Hablar sucio"
+  },
+  {
+   "id": 56,
+   "nivel": 3,
+   "texto": "Un 'cupón' canjeable por una noche a elección"
+  },
+  {
+   "id": 57,
+   "nivel": 3,
+   "texto": "Un cuarto de hotel temático"
+  },
+  {
+   "id": 58,
+   "nivel": 3,
+   "texto": "Un 'día del deseo': uno pide y el otro cumple"
+  },
+  {
+   "id": 59,
+   "nivel": 3,
+   "texto": "Ropa o disfraz para una noche especial"
+  },
+  {
+   "id": 60,
+   "nivel": 3,
+   "texto": "Escribir juntos una fantasía y actuarla"
+  },
+  {
+   "id": 61,
+   "nivel": 4,
+   "texto": "Toda una noche de control total para uno, y la siguiente para el otro"
+  },
+  {
+   "id": 62,
+   "nivel": 4,
+   "texto": "Probar varias posiciones nuevas en una misma noche"
+  },
+  {
+   "id": 63,
+   "nivel": 4,
+   "texto": "Un lugar al aire libre (privado y seguro)"
+  },
+  {
+   "id": 64,
+   "nivel": 4,
+   "texto": "Un juguete nuevo elegido juntos"
+  },
+  {
+   "id": 65,
+   "nivel": 4,
+   "texto": "Usar la boca más protagonista que nunca"
+  },
+  {
+   "id": 66,
+   "nivel": 4,
+   "texto": "Un maratón: ver cuántas veces en un día"
+  },
+  {
+   "id": 67,
+   "nivel": 4,
+   "texto": "Hacer realidad la fantasía número uno de uno"
+  },
+  {
+   "id": 68,
+   "nivel": 4,
+   "texto": "Hacer realidad la fantasía número uno del otro"
+  },
+  {
+   "id": 69,
+   "nivel": 4,
+   "texto": "Un video solo para nosotros (y se borra después)"
+  },
+  {
+   "id": 70,
+   "nivel": 4,
+   "texto": "Probar algo con temperatura (frío y tibio)"
+  },
+  {
+   "id": 71,
+   "nivel": 4,
+   "texto": "Vendar los ojos toda la noche"
+  },
+  {
+   "id": 72,
+   "nivel": 4,
+   "texto": "Una noche en una cabaña o lugar nuevo solo para esto"
+  },
+  {
+   "id": 73,
+   "nivel": 4,
+   "texto": "Una noche sin reglas, solo 'sí'"
+  },
+  {
+   "id": 74,
+   "nivel": 4,
+   "texto": "Juego de 'no se puede terminar hasta que yo diga'"
+  },
+  {
+   "id": 75,
+   "nivel": 4,
+   "texto": "Un rol con disfraz completo"
+  },
+  {
+   "id": 76,
+   "nivel": 4,
+   "texto": "Una sesión de fotos picante, bien nuestra"
+  },
+  {
+   "id": 77,
+   "nivel": 4,
+   "texto": "Que uno elija absolutamente todo de la noche, del principio al fin"
+  },
+  {
+   "id": 78,
+   "nivel": 4,
+   "texto": "Repetir nuestra mejor noche, igual"
+  },
+  {
+   "id": 79,
+   "nivel": 4,
+   "texto": "Probar un lugar nuevo de la casa cada noche de una semana"
+  },
+  {
+   "id": 80,
+   "nivel": 4,
+   "texto": "Inventar juntos un juego nuevo para Discreción"
+  }
+ ]
+}

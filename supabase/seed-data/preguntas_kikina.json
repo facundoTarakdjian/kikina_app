@@ -1,0 +1,2402 @@
+[
+ {
+  "id": 1,
+  "pregunta": "¿Qué preferís: solo poder hablar gritando o solo poder hablar susurrando?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 2,
+  "pregunta": "Si pudieras ir a cenar con un personaje histórico, ¿con quién irías?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 3,
+  "pregunta": "Ser la persona más atractiva del mundo pero la más pobre, o la más rica pero la más fea: ¿qué elegirías?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 4,
+  "pregunta": "¿Cuál es la mayor locura que hiciste en tu vida?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 5,
+  "pregunta": "¿Algo bizarro que te haya pasado en una date?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 6,
+  "pregunta": "¿Preferirías viajar al futuro o al pasado?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 7,
+  "pregunta": "¿Qué tipo de famoso te gustaría ser?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 8,
+  "pregunta": "¿Cómo te describirías en 3 adjetivos?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 9,
+  "pregunta": "¿Qué es lo que no soportás (o más odiás) de una persona?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 10,
+  "pregunta": "Si escribieras todo lo que te pasó hasta ahora en un libro, ¿creés que la gente lo querría leer?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 11,
+  "pregunta": "¿Cuál es tu frase favorita?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 12,
+  "pregunta": "¿De qué forma equivocada te juzga la gente que todavía no te conoce?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 13,
+  "pregunta": "¿Dónde serían tus vacaciones ideales?",
+  "categoria": "futuro",
+  "origen": "lista_original"
+ },
+ {
+  "id": 14,
+  "pregunta": "¿Cuál era tu serie de dibujos animados favorita?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 15,
+  "pregunta": "Si pudieras comprar una sola cosa, la que fuera, ¿qué comprarías?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 16,
+  "pregunta": "¿Qué 3 cualidades valorás más en una persona?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 17,
+  "pregunta": "Si pudieras aprender a hacer algo nuevo, ¿qué elegirías?",
+  "categoria": "futuro",
+  "origen": "lista_original"
+ },
+ {
+  "id": 18,
+  "pregunta": "Si pudieras ser un animal, ¿cuál serías?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 19,
+  "pregunta": "¿Cuál es la parte de tu cuerpo que más te gusta?",
+  "categoria": "picante",
+  "origen": "lista_original"
+ },
+ {
+  "id": 20,
+  "pregunta": "¿En qué lugar del mundo te gustaría vivir?",
+  "categoria": "futuro",
+  "origen": "lista_original"
+ },
+ {
+  "id": 21,
+  "pregunta": "¿Amar o ser amado?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 22,
+  "pregunta": "¿Viajar por todo el mundo sin poder volver a tu país, o no salir nunca de él?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 23,
+  "pregunta": "¿Una vida llena de sexo pero comiendo horrible, o una vida sin sexo llena de manjares?",
+  "categoria": "picante",
+  "origen": "lista_original"
+ },
+ {
+  "id": 24,
+  "pregunta": "¿Creés que te conocés bien?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 25,
+  "pregunta": "Si pudieras tener cualquier oficio del mundo, ¿cuál elegirías?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 26,
+  "pregunta": "¿Cuál es tu mayor miedo en esta vida?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 27,
+  "pregunta": "¿Perros o gatos?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 28,
+  "pregunta": "Si pudieras quedarte toda la vida con la misma edad, ¿cuál sería?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 29,
+  "pregunta": "¿Te gustaría casarte? ¿Cómo sería tu casamiento ideal?",
+  "categoria": "futuro",
+  "origen": "lista_original"
+ },
+ {
+  "id": 30,
+  "pregunta": "¿Te importa la plata?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 31,
+  "pregunta": "¿Tenés un amor platónico?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 32,
+  "pregunta": "¿Qué es lo que más valorás de tus amigos?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 33,
+  "pregunta": "¿Qué harías por amor?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 34,
+  "pregunta": "¿Qué te aburre de una persona?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 35,
+  "pregunta": "¿Cuál es el momento de más miedo que viviste?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 36,
+  "pregunta": "¿Algún papelón que hayas hecho en pedo?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 37,
+  "pregunta": "¿Cuál fue el momento más divertido de tu vida?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 38,
+  "pregunta": "¿Cuál es la profesión que más odiás?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 39,
+  "pregunta": "¿Sos de proyectar o de vivir el momento?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 40,
+  "pregunta": "¿Tu género de película preferido?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 41,
+  "pregunta": "¿Tu película favorita?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 42,
+  "pregunta": "¿Cuál es tu sueño más loco?",
+  "categoria": "futuro",
+  "origen": "lista_original"
+ },
+ {
+  "id": 43,
+  "pregunta": "¿Qué te gusta más: hablar o escribir y leer?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 44,
+  "pregunta": "¿Qué te aburre de tu vida?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 45,
+  "pregunta": "¿Creés en los fantasmas?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 46,
+  "pregunta": "¿Tu serie preferida?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 47,
+  "pregunta": "¿Qué personaje sobrenatural serías?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 48,
+  "pregunta": "¿Serías capaz de perdonar una infidelidad si supieras que esa persona realmente te ama?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 49,
+  "pregunta": "Si pudieras transformarte en uno de tus amigos, ¿en quién y por qué?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 50,
+  "pregunta": "¿Sacrificarías a una persona cercana para salvar a 100 desconocidos?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 51,
+  "pregunta": "¿Qué es lo más lindo que hiciste por amor?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 52,
+  "pregunta": "¿Cuál sería tu deseo irrenunciable?",
+  "categoria": "futuro",
+  "origen": "lista_original"
+ },
+ {
+  "id": 53,
+  "pregunta": "¿Qué es el amor para vos?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 54,
+  "pregunta": "¿Creés que la ignorancia te hace feliz?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 55,
+  "pregunta": "¿Qué característica tiene que tener sí o sí una persona para que te guste?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 56,
+  "pregunta": "¿Cuál es tu lugar preferido de tu casa?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 57,
+  "pregunta": "¿Saber si Dios existe o vivir con el misterio hasta morir?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 58,
+  "pregunta": "¿Rubios o morochos?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 59,
+  "pregunta": "¿Un amor para siempre o muchos grandes amores?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 60,
+  "pregunta": "¿Cuál es tu torta preferida?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 61,
+  "pregunta": "¿Quién te hace sentir vivo?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 62,
+  "pregunta": "¿Solés seguir al corazón o a la razón?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 63,
+  "pregunta": "¿Existe la amistad entre el hombre y la mujer?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 64,
+  "pregunta": "¿Cómo te gustaría ser recordado?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 65,
+  "pregunta": "¿Qué harías si fueras del sexo opuesto por un día?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 66,
+  "pregunta": "¿Qué harías si fueras invisible un día entero?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 67,
+  "pregunta": "Servicio ilimitado de por vida: ¿chef, masajista o chofer?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 68,
+  "pregunta": "¿Qué olor te lleva a tu infancia?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 69,
+  "pregunta": "¿Qué cosa chiquita te alegra el día?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 70,
+  "pregunta": "¿Cuál es tu día preferido del año?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 71,
+  "pregunta": "¿Te gusta tu nombre? ¿Sabés qué significa?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 72,
+  "pregunta": "¿Qué es lo mejor que te enseñó una persona?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 73,
+  "pregunta": "¿Qué no te puede faltar en la heladera?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 74,
+  "pregunta": "¿Qué cosa de tu vida actual no podría creer tu versión adolescente?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 75,
+  "pregunta": "¿Te hago acordar a alguien? ¿A quién?",
+  "categoria": "nosotros",
+  "origen": "lista_original"
+ },
+ {
+  "id": 76,
+  "pregunta": "¿Algún dato curioso tuyo?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 77,
+  "pregunta": "¿A quién elegirías para acompañarte en todas las aventuras locas que se te presenten?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 78,
+  "pregunta": "Cuarto de helado: ¿qué gustos?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 79,
+  "pregunta": "¿Extrañás a alguien de tu vida hoy?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 80,
+  "pregunta": "¿Fuiste infiel alguna vez?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 81,
+  "pregunta": "¿Verano o invierno? ¿Por qué?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 82,
+  "pregunta": "Si te gusta alguien, ¿le hablás vos o esperás que te hable?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 83,
+  "pregunta": "¿Te da miedo llegar a cierta edad? ¿A cuál y por qué?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 84,
+  "pregunta": "Si pudieras elegir ahora mismo: ¿con quién estarías, dónde y haciendo qué?",
+  "categoria": "futuro",
+  "origen": "lista_original"
+ },
+ {
+  "id": 85,
+  "pregunta": "¿Cuál fue tu peor pesadilla?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 86,
+  "pregunta": "¿Algo tuyo que te cueste admitir?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 87,
+  "pregunta": "¿Pasta o pollo?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 88,
+  "pregunta": "¿Navidad o Año Nuevo?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 89,
+  "pregunta": "¿Repetirías tu último chape?",
+  "categoria": "picante",
+  "origen": "lista_original"
+ },
+ {
+  "id": 90,
+  "pregunta": "¿Destino o casualidad?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 91,
+  "pregunta": "¿Podrías tener una relación abierta? ¿Qué pensás de las relaciones abiertas?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 92,
+  "pregunta": "Si te encontrás un millón de dólares en el piso, ¿a quién llamás primero?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 93,
+  "pregunta": "¿Qué es lo más lindo que te pueden decir?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 94,
+  "pregunta": "¿Alguna vez te perdiste algo por miedo?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 95,
+  "pregunta": "¿Algo que te salga muy mal o que no sepas hacer?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 96,
+  "pregunta": "¿Cuál es LA cosa tuya que nunca cambiarías?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 97,
+  "pregunta": "¿Algún sueño tuyo que hayas abandonado?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 98,
+  "pregunta": "¿Considerás que sabés amar?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 99,
+  "pregunta": "¿Cuál es tu mejor plan?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 100,
+  "pregunta": "¿Con qué personaje de Disney te sentís identificado?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 101,
+  "pregunta": "¿Cuál es la mejor propuesta de casamiento?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 102,
+  "pregunta": "¿Qué NO comerías en una primera cita?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 103,
+  "pregunta": "¿Cuál sería un motivo para descorchar un champagne?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 104,
+  "pregunta": "¿Qué estarías necesitando que pase más seguido en tu vida?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 105,
+  "pregunta": "Si tuvieras que definir la felicidad en una acción, ¿cuál sería?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 106,
+  "pregunta": "¿Cambiarías algo de tu pasado sabiendo que afectaría el futuro?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 107,
+  "pregunta": "¿Cuál sería tu slogan?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 108,
+  "pregunta": "¿Cuál sería la mejor pregunta que te pueden hacer?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 109,
+  "pregunta": "¿Cuál es el sueño más grande que tenés?",
+  "categoria": "futuro",
+  "origen": "lista_original"
+ },
+ {
+  "id": 110,
+  "pregunta": "¿Qué diferencias creés que hay entre el amor y el enamoramiento?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 111,
+  "pregunta": "¿Cuál fue tu primera impresión de mí?",
+  "categoria": "nosotros",
+  "origen": "lista_original"
+ },
+ {
+  "id": 112,
+  "pregunta": "¿Qué opinás de que la mujer tome la iniciativa en una relación?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 113,
+  "pregunta": "¿Qué es lo que más te gusta de tu personalidad?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 114,
+  "pregunta": "¿Cuál es un pensamiento recurrente que tenés?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 115,
+  "pregunta": "¿Te permitís ser vulnerable? ¿Con quién?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 116,
+  "pregunta": "¿Qué tema considerás tabú?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 117,
+  "pregunta": "¿Qué situación te incomoda?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 118,
+  "pregunta": "¿Una situación en la que pasaste vergüenza?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 119,
+  "pregunta": "Nombrá a alguien que te inspire.",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 120,
+  "pregunta": "Los domingos son: ¿deprimentes o disfrutables?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 121,
+  "pregunta": "¿Creés en las segundas oportunidades?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 122,
+  "pregunta": "¿Todo lo que pensamos es lo que deseamos?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 123,
+  "pregunta": "¿\"Si no te cela, no te quiere\"?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 124,
+  "pregunta": "¿Con qué tipo de personalidad solés conectar?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 125,
+  "pregunta": "¿Un miedo boludo?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 126,
+  "pregunta": "¿Creés en \"el amor de tu vida\"?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 127,
+  "pregunta": "¿Elegimos lo que somos o nos lo impone el entorno?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 128,
+  "pregunta": "Cuando eras chico/a, ¿qué querías ser de grande?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 129,
+  "pregunta": "¿Tenés alguna obsesión? ¿Cuál?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 130,
+  "pregunta": "¿Qué actitud no te gusta que tengan con vos?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 131,
+  "pregunta": "¿Qué etiqueta sentís que cargás? ¿Te identifica?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 132,
+  "pregunta": "¿Una buena decisión que hayas tomado?",
+  "categoria": "pasado",
+  "origen": "lista_original"
+ },
+ {
+  "id": 133,
+  "pregunta": "¿Un talento inútil?",
+  "categoria": "divertidas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 134,
+  "pregunta": "¿Un momento simple que disfrutes?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 135,
+  "pregunta": "¿Escuchás la opinión de los demás?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 136,
+  "pregunta": "¿Qué fantasía te gustaría bajar a la realidad?",
+  "categoria": "picante",
+  "origen": "lista_original"
+ },
+ {
+  "id": 137,
+  "pregunta": "¿Qué actividad te hace perder la noción del tiempo?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 138,
+  "pregunta": "¿El fin justifica los medios?",
+  "categoria": "profundas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 139,
+  "pregunta": "Completá: esta semana me puse contento/a porque…",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 140,
+  "pregunta": "¿Existe la monogamia?",
+  "categoria": "amor",
+  "origen": "lista_original"
+ },
+ {
+  "id": 141,
+  "pregunta": "¿Pedir perdón o pedir permiso?",
+  "categoria": "dilemas",
+  "origen": "lista_original"
+ },
+ {
+  "id": 142,
+  "pregunta": "¿Te gusta el deporte? ¿Cuál practicás?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 143,
+  "pregunta": "¿Un libro que te haya gustado?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 144,
+  "pregunta": "¿Una actitud de otra persona que \"te pueda\"?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 145,
+  "pregunta": "¿Te gusta salir?",
+  "categoria": "gustos",
+  "origen": "lista_original"
+ },
+ {
+  "id": 146,
+  "pregunta": "¿Qué fue lo primero que te gustó de mí?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 147,
+  "pregunta": "¿En qué momento te diste cuenta de que te gustaba en serio?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 148,
+  "pregunta": "Si pudieras quedarte con un solo recuerdo nuestro, ¿cuál elegirías?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 149,
+  "pregunta": "¿Qué cosa mía te hace reír aunque no quieras?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 150,
+  "pregunta": "¿Qué hábito mío te volvía loco/a al principio y ahora te encanta?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 151,
+  "pregunta": "¿Qué canción te hace pensar en nosotros?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 152,
+  "pregunta": "¿Cuál fue nuestra mejor date hasta ahora?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 153,
+  "pregunta": "¿Qué date te gustaría repetir tal cual?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 154,
+  "pregunta": "¿Qué es algo que nunca te dije y te gustaría escuchar?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 155,
+  "pregunta": "Si nuestra relación fuera una película, ¿de qué género sería?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 156,
+  "pregunta": "¿Qué título le pondrías al capítulo de cuando nos conocimos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 157,
+  "pregunta": "¿Qué se te pasó por la cabeza la primera vez que nos vimos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 158,
+  "pregunta": "¿Cuál es tu foto favorita de nosotros?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 159,
+  "pregunta": "¿Qué te gustaría que hagamos más seguido?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 160,
+  "pregunta": "¿Qué cosa nueva te gustaría que probemos juntos este año?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 161,
+  "pregunta": "¿En qué nos parecemos más de lo que creemos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 162,
+  "pregunta": "¿En qué somos totalmente opuestos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 163,
+  "pregunta": "¿Qué aprendiste de mí?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 164,
+  "pregunta": "¿Qué te gustaría que yo aprenda de vos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 165,
+  "pregunta": "¿Cuándo te sentiste más cuidado/a por mí?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 166,
+  "pregunta": "¿Qué gesto mío chiquito te llega más?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 167,
+  "pregunta": "¿Cuál es tu apodo favorito para mí?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 168,
+  "pregunta": "¿Cuál es tu chiste interno nuestro preferido?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 169,
+  "pregunta": "¿Qué lugar es \"nuestro lugar\"?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 170,
+  "pregunta": "Si tuviéramos que elegir una comida como \"la nuestra\", ¿cuál sería?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 171,
+  "pregunta": "¿Qué viaje juntos te gustaría hacer antes de que pase un año?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 172,
+  "pregunta": "¿Qué es lo más lindo que hice por vos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 173,
+  "pregunta": "¿Qué hiciste por mí que yo nunca me enteré?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 174,
+  "pregunta": "¿Qué cosa mía te sorprendió para bien cuando me conociste más?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 175,
+  "pregunta": "¿Qué te imaginabas de mí antes de conocerme bien que resultó no ser así?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 176,
+  "pregunta": "¿Cómo describirías nuestra relación en tres palabras?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 177,
+  "pregunta": "¿Cuándo pensaste por primera vez \"esta persona es para mí\"?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 178,
+  "pregunta": "¿Qué discusión nuestra te dejó una enseñanza?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 179,
+  "pregunta": "¿Cómo te gusta que te pida perdón?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 180,
+  "pregunta": "¿Cómo te gusta que te consuele cuando estás mal?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 181,
+  "pregunta": "¿Cuál es tu lenguaje del amor: palabras, tiempo, regalos, contacto o gestos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 182,
+  "pregunta": "¿Qué ritual nuestro no negociarías nunca?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 183,
+  "pregunta": "¿Qué tradición te gustaría que inventemos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 184,
+  "pregunta": "Si tuvieras que presentarme en una frase a alguien que no me conoce, ¿qué dirías?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 185,
+  "pregunta": "¿Qué creés que piensan tus amigos de nosotros?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 186,
+  "pregunta": "¿Qué es lo que más extrañás de mí cuando no nos vemos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 187,
+  "pregunta": "¿Qué te gustaría que recordemos de este año dentro de diez?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 188,
+  "pregunta": "¿Qué día de nuestra relación volverías a vivir?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 189,
+  "pregunta": "¿Qué cosa mía te da ternura?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 190,
+  "pregunta": "¿Qué cosa mía te pone nervioso/a (para bien)?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 191,
+  "pregunta": "¿Cuál fue nuestra pelea más ridícula?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 192,
+  "pregunta": "¿Qué regalo mío te gustó más?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 193,
+  "pregunta": "Si pudieras cambiar una sola cosa de cómo nos conocimos, ¿cambiarías algo?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 194,
+  "pregunta": "¿Qué es lo que más te gusta de cómo somos cuando estamos solos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 195,
+  "pregunta": "¿En qué te gustaría que te apoye más?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 196,
+  "pregunta": "¿Qué sueño tuyo te gustaría que cumplamos juntos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 197,
+  "pregunta": "¿Qué cosa nunca hicimos y te da curiosidad?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 198,
+  "pregunta": "¿Cuándo sentiste más orgullo de mí?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 199,
+  "pregunta": "¿Qué cosa mía imitarías perfecto?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 200,
+  "pregunta": "¿Qué es lo que mejor hacemos juntos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 201,
+  "pregunta": "¿Qué es lo que peor hacemos juntos? (con amor)",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 202,
+  "pregunta": "¿Quién de los dos dice \"te quiero\" más seguido?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 203,
+  "pregunta": "¿Qué pregunta te da miedo hacerme?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 204,
+  "pregunta": "¿Cómo sería un domingo perfecto conmigo?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 205,
+  "pregunta": "¿Qué es lo que más te gusta de mi familia o mis amigos?",
+  "categoria": "nosotros",
+  "origen": "nueva"
+ },
+ {
+  "id": 206,
+  "pregunta": "¿Saber lo que piensan los demás o que nadie sepa nunca lo que pensás vos?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 207,
+  "pregunta": "¿Vivir sin música o sin series y películas?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 208,
+  "pregunta": "¿Playa o montaña?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 209,
+  "pregunta": "¿Desayuno o cena?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 210,
+  "pregunta": "¿Viajar solo/a un año entero o no volver a viajar solo/a nunca?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 211,
+  "pregunta": "¿Que todos te recuerden por algo malo o que todos te olviden?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 212,
+  "pregunta": "¿Poder volar o ser invisible?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 213,
+  "pregunta": "¿Hablar todos los idiomas o hablar con los animales?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 214,
+  "pregunta": "¿Ganar la lotería o vivir el doble de años?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 215,
+  "pregunta": "¿Perder todas tus fotos o todos tus mensajes?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 216,
+  "pregunta": "¿Un botón de pausa o un botón de rebobinar para tu vida?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 217,
+  "pregunta": "¿Vivir en el campo o en el centro de una gran ciudad?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 218,
+  "pregunta": "¿Saber la fecha de tu muerte o la causa?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 219,
+  "pregunta": "¿Ser el más inteligente del grupo o el más gracioso?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 220,
+  "pregunta": "¿No volver a comer nunca dulce o nunca salado?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 221,
+  "pregunta": "¿Un viaje largo cada dos años o muchos viajes cortos?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 222,
+  "pregunta": "¿Peli en casa o peli en el cine?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 223,
+  "pregunta": "¿Mate o café?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 224,
+  "pregunta": "¿Asado o pizza para toda la vida?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 225,
+  "pregunta": "¿Ser famoso o ser millonario anónimo?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 226,
+  "pregunta": "¿Revivir tu mejor día una y otra vez o vivir días nuevos sin saber cómo van a ser?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 227,
+  "pregunta": "¿Que te lean la mente o leerles la mente a los demás?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 228,
+  "pregunta": "¿Trabajar de lo que amás ganando poco o de lo que odiás ganando muchísimo?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 229,
+  "pregunta": "¿Perro grande o perro chiquito?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 230,
+  "pregunta": "¿Fiesta grande o cena íntima para tu cumpleaños?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 231,
+  "pregunta": "¿Llegar siempre 10 minutos tarde o siempre 20 minutos temprano?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 232,
+  "pregunta": "¿Vivir sin internet o sin aire acondicionado?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 233,
+  "pregunta": "¿Cocinar siempre o lavar los platos siempre?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 234,
+  "pregunta": "¿Que tu vida sea una comedia o un drama épico?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 235,
+  "pregunta": "¿Conocer a tu yo de 10 años o a tu yo de 80?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 236,
+  "pregunta": "¿Leer el diario íntimo de tu pareja o que lea el tuyo?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 237,
+  "pregunta": "¿Teletransportarte o viajar en el tiempo?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 238,
+  "pregunta": "¿Vivir 200 años en el pasado o 200 años en el futuro?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 239,
+  "pregunta": "¿Poder repetir un día de tu vida o saltearte uno?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 240,
+  "pregunta": "¿Ser un cocinero excelente o un bailarín excelente?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 241,
+  "pregunta": "¿Una casa enorme lejos de todos o un depto chico cerca de todos?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 242,
+  "pregunta": "¿Que te regalen una experiencia o un objeto?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 243,
+  "pregunta": "¿Mensaje largo o audio largo?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 244,
+  "pregunta": "¿Spoiler o quedarte con la duda para siempre?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 245,
+  "pregunta": "¿Hacer el ridículo en público o que se filtren tus búsquedas de Google?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 246,
+  "pregunta": "¿Vacaciones sin celular o vacaciones sin plata?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 247,
+  "pregunta": "¿Amanecer o atardecer?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 248,
+  "pregunta": "¿Lluvia en casa o sol en la calle?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 249,
+  "pregunta": "¿Una carrera de F1 en vivo o una final del Mundial en la cancha?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 250,
+  "pregunta": "¿Quedarte sin olfato o sin gusto?",
+  "categoria": "dilemas",
+  "origen": "nueva"
+ },
+ {
+  "id": 251,
+  "pregunta": "¿Qué creías firmemente hace cinco años y ahora no?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 252,
+  "pregunta": "¿Qué te gustaría que la gente supiera de vos sin tener que decirlo?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 253,
+  "pregunta": "¿Cuándo fue la última vez que lloraste? ¿Por qué?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 254,
+  "pregunta": "¿Qué te da paz?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 255,
+  "pregunta": "¿Qué es para vos una vida bien vivida?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 256,
+  "pregunta": "¿Qué heredaste de tus viejos que te gusta? ¿Y algo que no?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 257,
+  "pregunta": "¿Qué conversación pendiente tenés con alguien?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 258,
+  "pregunta": "¿De qué te arrepentís de no haber hecho?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 259,
+  "pregunta": "¿Qué te hace sentir orgulloso/a de vos?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 260,
+  "pregunta": "¿Qué parte tuya estás trabajando para mejorar?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 261,
+  "pregunta": "¿A qué le tenés miedo en el amor?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 262,
+  "pregunta": "¿Qué te enseñó tu peor momento?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 263,
+  "pregunta": "¿Qué te cuesta pedir?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 264,
+  "pregunta": "¿Cuándo te sentiste realmente libre?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 265,
+  "pregunta": "¿Creés que las personas cambian?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 266,
+  "pregunta": "¿Qué es el éxito para vos?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 267,
+  "pregunta": "¿Qué valor no negociarías nunca?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 268,
+  "pregunta": "¿Qué te hace sentir solo/a aunque estés acompañado/a?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 269,
+  "pregunta": "¿Qué te dirías si pudieras hablar con vos hace diez años?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 270,
+  "pregunta": "¿Qué te gustaría que digan de vos en tu cumpleaños 80?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 271,
+  "pregunta": "¿Qué es lo que más te cuesta perdonar?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 272,
+  "pregunta": "¿Qué te hace enojar más de lo que debería?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 273,
+  "pregunta": "¿Qué te da vergüenza que te guste?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 274,
+  "pregunta": "¿Cuál es la mentira que más te dijiste a vos mismo/a?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 275,
+  "pregunta": "¿Qué te genera ansiedad últimamente?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 276,
+  "pregunta": "¿Qué cosa del mundo te gustaría cambiar?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 277,
+  "pregunta": "¿Creés en algo más grande que nosotros?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 278,
+  "pregunta": "¿Qué significa para vos \"estar en casa\"?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 279,
+  "pregunta": "¿Qué te motiva a levantarte a la mañana?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 280,
+  "pregunta": "¿Quién fue la persona que más te marcó?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 281,
+  "pregunta": "¿Qué te gustaría dejarle al mundo?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 282,
+  "pregunta": "¿Qué es lo más valiente que hiciste?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 283,
+  "pregunta": "¿Cómo te das cuenta de que algo es para vos?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 284,
+  "pregunta": "¿Hay algo que nunca le contaste a nadie y que podrías contarme?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 285,
+  "pregunta": "¿Qué es la lealtad para vos?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 286,
+  "pregunta": "¿Preferís tener razón o estar en paz?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 287,
+  "pregunta": "¿Cómo manejás los celos?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 288,
+  "pregunta": "¿Qué te cuesta soltar?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 289,
+  "pregunta": "¿Qué te sana?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 290,
+  "pregunta": "¿Sentís que estás donde querías estar a esta edad?",
+  "categoria": "profundas",
+  "origen": "nueva"
+ },
+ {
+  "id": 291,
+  "pregunta": "Si tu vida tuviera una canción de entrada, ¿cuál sería?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 292,
+  "pregunta": "¿Cuál es tu combinación de comida más rara favorita?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 293,
+  "pregunta": "Si fueras un condimento, ¿cuál serías?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 294,
+  "pregunta": "¿Qué superpoder inútil te gustaría tener?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 295,
+  "pregunta": "Si mañana te despertás famoso/a, ¿por qué sería?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 296,
+  "pregunta": "¿Cuál es el peor regalo que recibiste?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 297,
+  "pregunta": "¿Qué palabra usás demasiado?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 298,
+  "pregunta": "¿Qué harías con un día libre sorpresa sin ninguna obligación?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 299,
+  "pregunta": "Si pudieras abrir un negocio mañana, ¿de qué sería?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 300,
+  "pregunta": "¿Qué app borrarías del mundo?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 301,
+  "pregunta": "¿Qué comida te comerías ahora mismo?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 302,
+  "pregunta": "Si fueras un plato de comida, ¿cuál serías?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 303,
+  "pregunta": "¿Qué famoso creés que sería tu mejor amigo?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 304,
+  "pregunta": "¿Cuál es tu tema infalible de karaoke?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 305,
+  "pregunta": "¿En qué olimpíada ridícula ganarías la medalla de oro?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 306,
+  "pregunta": "Si tuvieras que vivir dentro de una película, ¿cuál elegirías?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 307,
+  "pregunta": "¿Qué objeto de tu casa salvarías en un incendio (sin contar personas ni mascotas)?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 308,
+  "pregunta": "¿Cuál es tu placer culposo?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 309,
+  "pregunta": "¿Qué cosa hacés distinto a todo el mundo?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 310,
+  "pregunta": "¿Cuál es la peor moda que seguiste?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 311,
+  "pregunta": "Tenés 1000 dólares que hay que gastar hoy: ¿en qué?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 312,
+  "pregunta": "¿Qué opinión impopular tenés?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 313,
+  "pregunta": "¿Qué comida está sobrevalorada?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 314,
+  "pregunta": "¿Qué comida está subestimada?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 315,
+  "pregunta": "Si fueras un emoji, ¿cuál serías?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 316,
+  "pregunta": "¿Cuál es tu frase de película favorita?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 317,
+  "pregunta": "¿A qué hora del día sos tu mejor versión?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 318,
+  "pregunta": "Si tuvieras un programa de tele, ¿de qué sería?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 319,
+  "pregunta": "¿Cuál es la mentira más inocente que dijiste para zafar?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 320,
+  "pregunta": "¿Qué deporte raro te gustaría probar?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 321,
+  "pregunta": "¿Cuál es tu snack de madrugada?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 322,
+  "pregunta": "Si fueras presidente por un día, ¿cuál sería tu primera ley?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 323,
+  "pregunta": "¿Qué cosa no entendés por qué le gusta a la gente?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 324,
+  "pregunta": "¿Qué te gustaría que inventen ya?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 325,
+  "pregunta": "Si tu mascota (real o imaginaria) pudiera hablar, ¿qué diría de vos?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 326,
+  "pregunta": "¿Qué personaje de serie serías y por qué?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 327,
+  "pregunta": "¿Cuál es tu mejor imitación?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 328,
+  "pregunta": "¿Qué habilidad de supervivencia tenés?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 329,
+  "pregunta": "¿Cuál es el consejo más inútil que te dieron?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 330,
+  "pregunta": "¿Qué canción no podés dejar de cantar si suena?",
+  "categoria": "divertidas",
+  "origen": "nueva"
+ },
+ {
+  "id": 331,
+  "pregunta": "¿Cuál es tu primer recuerdo?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 332,
+  "pregunta": "¿A qué jugabas de chico/a hasta el cansancio?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 333,
+  "pregunta": "¿Cómo eras en el colegio?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 334,
+  "pregunta": "¿Quién era tu mejor amigo/a de la infancia?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 335,
+  "pregunta": "¿Cuál fue tu primer trabajo?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 336,
+  "pregunta": "¿Qué travesura de chico/a nunca confesaste?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 337,
+  "pregunta": "¿Cuál fue el mejor cumpleaños de tu vida?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 338,
+  "pregunta": "¿Qué comida de tu infancia extrañás?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 339,
+  "pregunta": "¿Cuál fue tu primer viaje sin tus viejos?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 340,
+  "pregunta": "¿Cuál fue tu primer artista o canción favorita?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 341,
+  "pregunta": "¿Qué profesor/a te marcó?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 342,
+  "pregunta": "¿Qué te daba miedo de chico/a?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 343,
+  "pregunta": "¿Cuál fue tu primer amor?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 344,
+  "pregunta": "¿Qué penitencia te pusieron que nunca olvidaste?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 345,
+  "pregunta": "¿Qué vacaciones familiares recordás más?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 346,
+  "pregunta": "¿Cuál fue el día más feliz de tu adolescencia?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 347,
+  "pregunta": "¿Qué estilo tenías a los 15?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 348,
+  "pregunta": "¿Qué te dijeron de chico/a que te quedó grabado?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 349,
+  "pregunta": "¿Cuál es el recuerdo más lindo con tus abuelos?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 350,
+  "pregunta": "¿Qué hobby abandonaste y extrañás?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 351,
+  "pregunta": "¿Qué noche de joda recordás más?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 352,
+  "pregunta": "¿Cómo fue tu primera date?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 353,
+  "pregunta": "¿Qué te hubiera gustado que te digan a los 18?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 354,
+  "pregunta": "¿Cuál fue la decisión más difícil que tomaste?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 355,
+  "pregunta": "¿Qué lugar de tu infancia te gustaría volver a visitar?",
+  "categoria": "pasado",
+  "origen": "nueva"
+ },
+ {
+  "id": 356,
+  "pregunta": "¿Cómo te imaginás tu vida en 10 años?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 357,
+  "pregunta": "¿Dónde te imaginás viviendo de viejo/a?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 358,
+  "pregunta": "¿Qué te gustaría haber logrado a los 40?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 359,
+  "pregunta": "¿Querés tener hijos? ¿Cuántos?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 360,
+  "pregunta": "¿Qué nombres te gustan para un hijo o una hija?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 361,
+  "pregunta": "¿Cómo sería tu casa ideal?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 362,
+  "pregunta": "¿Qué te gustaría aprender antes de los 35?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 363,
+  "pregunta": "¿Qué viaje no te podés morir sin hacer?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 364,
+  "pregunta": "¿Qué mascota te gustaría tener en el futuro?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 365,
+  "pregunta": "¿Qué te gustaría estar haciendo un martes cualquiera dentro de 5 años?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 366,
+  "pregunta": "¿Qué te gustaría dejar de hacer este año?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 367,
+  "pregunta": "¿Qué meta tenés para los próximos 12 meses?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 368,
+  "pregunta": "¿Cómo te imaginás de abuelo/a?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 369,
+  "pregunta": "¿Te gustaría vivir afuera un tiempo? ¿Dónde?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 370,
+  "pregunta": "¿Qué proyecto te gustaría arrancar?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 371,
+  "pregunta": "¿Qué tiene que estar sí o sí en nuestra bucket list?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 372,
+  "pregunta": "¿Qué tradición querés mantener toda la vida?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 373,
+  "pregunta": "¿Te imaginás jubilado/a? ¿Haciendo qué?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 374,
+  "pregunta": "¿Qué te gustaría que cambie en tu rutina?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 375,
+  "pregunta": "¿Qué te gustaría festejar a lo grande en los próximos años?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 376,
+  "pregunta": "¿Qué te ilusiona del futuro?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 377,
+  "pregunta": "¿Qué miedo te gustaría superar antes de fin de año?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 378,
+  "pregunta": "Si pudieras garantizar una sola cosa de tu futuro, ¿cuál sería?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 379,
+  "pregunta": "¿Qué te gustaría estar celebrando dentro de un año?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 380,
+  "pregunta": "¿Cómo te gustaría que sea tu próximo cumpleaños?",
+  "categoria": "futuro",
+  "origen": "nueva"
+ },
+ {
+  "id": 381,
+  "pregunta": "¿Qué fue lo primero que te atrajo físicamente de mí?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 382,
+  "pregunta": "¿Cuál es el lugar más raro donde te gustaría darme un beso?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 383,
+  "pregunta": "¿Qué prenda mía te encanta?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 384,
+  "pregunta": "¿Qué cosa te prende que nadie se imaginaría?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 385,
+  "pregunta": "¿Cuál es tu recuerdo más picante nuestro?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 386,
+  "pregunta": "¿Qué te gustaría que te haga más seguido?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 387,
+  "pregunta": "¿Qué te gustaría probar que nunca probaste?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 388,
+  "pregunta": "¿Mañana o noche?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 389,
+  "pregunta": "¿Qué te gusta que te diga al oído?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 390,
+  "pregunta": "¿Qué canción pondrías de fondo?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 391,
+  "pregunta": "¿Qué juego picante te gustaría inventar para nosotros?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 392,
+  "pregunta": "¿Adónde te gustaría hacer una escapada solo para nosotros dos?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 393,
+  "pregunta": "¿Cuál de nuestros besos te gustó más?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 394,
+  "pregunta": "¿Qué parte de mi cuerpo te gusta más?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 395,
+  "pregunta": "¿Lento o intenso?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 396,
+  "pregunta": "¿Qué te dio vergüenza pedirme alguna vez?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 397,
+  "pregunta": "¿Cómo sería una noche perfecta los dos solos?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 398,
+  "pregunta": "¿Luces prendidas o apagadas?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 399,
+  "pregunta": "¿Qué mensaje mío te dejó pensando todo el día?",
+  "categoria": "picante",
+  "origen": "nueva"
+ },
+ {
+  "id": 400,
+  "pregunta": "¿Qué te parece más sexy: la seguridad, el humor o la mirada?",
+  "categoria": "picante",
+  "origen": "nueva"
+ }
+]
