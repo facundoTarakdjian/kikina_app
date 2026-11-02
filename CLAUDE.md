@@ -18,7 +18,7 @@ Si algo de lo que te piden contradice estos documentos, **avisá antes de implem
 ## Cómo trabajar
 1. Te van a pedir **una tarea por ID** del ROADMAP. Antes de codear, respondé con un **plan de ≤ 5 bullets** (archivos a tocar, enfoque, riesgos) y esperá OK.
 2. Hacé **solo esa tarea**. Nada de refactors ni features "de paso"; si ves algo para mejorar, anotalo al final de tu respuesta.
-3. Al terminar: corré `pnpm typecheck && pnpm lint && pnpm test`, tildá la tarea en `docs/ROADMAP.md` y proponé el mensaje de commit (`feat(L-08): …`).
+3. Al terminar: corré `pnpm typecheck && pnpm lint && pnpm test && pnpm build`, tildá la tarea en `docs/ROADMAP.md` y proponé el mensaje de commit (`feat(L-08): …`).
 4. Si una decisión no está en los docs y cambia el comportamiento o el modelo de datos, **preguntá**. Si es un detalle de implementación, elegí lo más simple y decilo.
 
 ## Stack

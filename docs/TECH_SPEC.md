@@ -65,7 +65,7 @@ Búsqueda de lugares: Google Places API (New) dentro del cupo gratuito → fallb
 - Login: `supabase.auth.signInWithOtp({ email, options: { shouldCreateUser: false } })` → el usuario escribe el código con `verifyOtp({ email, token, type: 'email' })`.
 - **Plantilla del mail** (Auth → Email Templates → Magic Link): mostrar `{{ .Token }}` grande y **no** incluir el link. Motivo: en iOS la PWA instalada no comparte cookies con Safari; un link abriría Safari y la app seguiría deslogueada.
 - Sesión: access token de 1 h + refresh token sin vencimiento (default del plan gratis) → en la práctica nunca vuelve a pedir login.
-- Middleware de Next (`src/middleware.ts`) refresca la sesión en cada request (patrón oficial de `@supabase/ssr`).
+- Proxy de Next (`src/proxy.ts`) refresca la sesión en cada request (patrón oficial de `@supabase/ssr`). Next.js 16 reemplazó el archivo `middleware.ts` por `proxy.ts` con `export function proxy`.
 - **SMTP propio: obligatorio.** El mailer incluido de Supabase solo entrega a miembros de la organización del proyecto (no a usuarios externos), por lo que Kiki nunca recibiría los códigos. Configurar un SMTP externo en Auth → Settings → SMTP antes del primer uso. Setup actual: Gmail con contraseña de aplicación (`smtp.gmail.com:587`, usuario `facu.tarakdjian@gmail.com`). Alternativa si se revoca: Resend con dominio verificado (plan gratis, 100 mails/día).
 
 ---
@@ -813,7 +813,7 @@ kikina/
 │  │  ├─ ui/                    (Button, Sheet, Card, Avatar, Dice, Envelope…)
 │  │  ├─ memories/ games/ discretion/ questions/ thoughts/
 │  ├─ lib/
-│  │  ├─ supabase/{client.ts, server.ts, admin.ts, middleware.ts}
+│  │  ├─ supabase/{client.ts, server.ts, admin.ts, middleware.ts}  ← middleware.ts es el helper de @supabase/ssr (no el proxy de Next)
 │  │  ├─ scorers/{truco,chinchon,scrabble,winner-only,rounds}.ts + __tests__/
 │  │  ├─ images/{compress.ts, exif.ts, upload.ts}
 │  │  ├─ places/{provider.ts, google.ts, photon.ts}
@@ -822,7 +822,7 @@ kikina/
 │  │  ├─ export/{buildZip.ts}
 │  │  └─ dates.ts               (días juntos, formato es-AR)
 │  ├─ types/database.ts         (generado: supabase gen types)
-│  └─ middleware.ts
+│  └─ proxy.ts
 └─ .github/workflows/backup.yml (v1)
 ```
 

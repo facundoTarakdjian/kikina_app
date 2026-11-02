@@ -33,7 +33,7 @@
 
 ### Definición de "terminado" (para todas las tareas)
 - [ ] Hace lo que dice el criterio de la tarea.
-- [ ] `pnpm typecheck`, `pnpm lint` y `pnpm test` pasan.
+- [ ] `pnpm typecheck`, `pnpm lint`, `pnpm test` y **`pnpm build`** pasan.
 - [ ] Probado en el celular (si es UI) en modo claro y oscuro.
 - [ ] Sin claves ni datos sensibles en el código.
 - [ ] Commit con el ID de la tarea.
