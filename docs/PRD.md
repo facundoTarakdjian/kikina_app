@@ -264,6 +264,7 @@ No es un producto comercial; "éxito" es:
 | Kiki no adopta la app | Carga mínima (foto + lugar), Atajos de iOS, cero insistencia. |
 | Pérdida de datos por proveedor | Export abierto + backup mensual a Google Drive (v1). |
 | Contenido de Discreción incómodo | Niveles, "pasar" siempre, límites "nunca", sin terceros ni dolor. |
+| SMTP revocado (contraseña de app de Gmail) → nadie puede pedir el código | Regenerar contraseña de app en la cuenta de Google en < 5 min; o migrar a Resend (dominio verificado, sin depender de una cuenta personal). |
 
 ---
 

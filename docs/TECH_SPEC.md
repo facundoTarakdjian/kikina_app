@@ -66,7 +66,7 @@ Búsqueda de lugares: Google Places API (New) dentro del cupo gratuito → fallb
 - **Plantilla del mail** (Auth → Email Templates → Magic Link): mostrar `{{ .Token }}` grande y **no** incluir el link. Motivo: en iOS la PWA instalada no comparte cookies con Safari; un link abriría Safari y la app seguiría deslogueada.
 - Sesión: access token de 1 h + refresh token sin vencimiento (default del plan gratis) → en la práctica nunca vuelve a pedir login.
 - Middleware de Next (`src/middleware.ts`) refresca la sesión en cada request (patrón oficial de `@supabase/ssr`).
-- SMTP: el mailer de Supabase alcanza para 2 usuarios (tiene un límite bajo de envíos por hora). Opcional: SMTP propio (por ejemplo Resend, plan gratis) si alguna vez falla.
+- **SMTP propio: obligatorio.** El mailer incluido de Supabase solo entrega a miembros de la organización del proyecto (no a usuarios externos), por lo que Kiki nunca recibiría los códigos. Configurar un SMTP externo en Auth → Settings → SMTP antes del primer uso. Setup actual: Gmail con contraseña de aplicación (`smtp.gmail.com:587`, usuario `facu.tarakdjian@gmail.com`). Alternativa si se revoca: Resend con dominio verificado (plan gratis, 100 mails/día).
 
 ---
 
