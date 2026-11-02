@@ -8,6 +8,13 @@ export default function AjustesPage() {
       <div className="flex flex-col gap-2">
         <SignOutButton />
       </div>
+
+      {/* Atribución de assets open source */}
+      <footer className="mt-auto pt-8 pb-2">
+        <p className="text-caption text-ink-2">
+          Koala: Noto Emoji, © Google, Apache License 2.0
+        </p>
+      </footer>
     </main>
   );
 }

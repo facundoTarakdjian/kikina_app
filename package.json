@@ -11,18 +11,22 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
+    "icons": "tsx scripts/icons.ts",
     "seed": "tsx --env-file .env.local scripts/seed.ts",
     "db:push": "supabase db push --remote",
     "db:types": "supabase gen types typescript --remote > src/types/database.ts"
   },
   "dependencies": {
+    "@serwist/turbopack": "^9.5.13",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.118.0",
+    "esbuild": "^0.28.2",
     "lucide-react": "^1.66.0",
     "motion": "^14.9.0",
     "next": "16.4.3",
     "react": "19.3.0",
     "react-dom": "19.3.0",
+    "serwist": "^9.5.13",
     "zod": "^4.6.7"
   },
   "devDependencies": {
@@ -40,6 +44,7 @@
     "happy-dom": "^21.0.4",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
+    "sharp": "^0.35.5",
     "supabase": "3.0.0",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",

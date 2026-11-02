@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/src/lib/supabase/server";
 import { BottomNav } from "@/src/components/ui/BottomNav";
+import { InstallGuide } from "@/src/components/ui/InstallGuide";
 
 export default async function AppLayout({
   children,
@@ -22,6 +23,7 @@ export default async function AppLayout({
       </div>
 
       <BottomNav />
+      <InstallGuide />
     </div>
   );
 }

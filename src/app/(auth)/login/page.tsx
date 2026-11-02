@@ -251,10 +251,14 @@ export default function LoginPage() {
     <main className="min-h-screen bg-paper flex flex-col items-center justify-center px-6 py-12">
       <div className="w-full max-w-sm flex flex-col items-center gap-8">
         <div className="flex flex-col items-center gap-3">
-          {/* Koala se agrega en L-04 */}
-          <span className="text-5xl" aria-hidden="true">
-            🐨
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/brand/koala.svg"
+            alt="Koala de Kikiña"
+            width={80}
+            height={80}
+            className="select-none"
+          />
           <Wordmark className="text-[2rem]" />
         </div>
 

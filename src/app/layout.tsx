@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Instrument_Sans, Young_Serif } from "next/font/google";
+import { SerwistInit } from "@/src/components/ui/SerwistInit";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -24,8 +25,15 @@ const youngSerif = Young_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Ki<i",
+  title: "Kikiña",
+  applicationName: "Kikiña",
   robots: { index: false, follow: false },
+  appleWebApp: {
+    capable: true,
+    title: "Ki<i",
+    statusBarStyle: "default",
+  },
+  formatDetection: { telephone: false },
 };
 
 export default function RootLayout({
@@ -38,7 +46,12 @@ export default function RootLayout({
       lang="es"
       className={`h-full ${fraunces.variable} ${instrumentSans.variable} ${youngSerif.variable}`}
     >
-      <body className="min-h-full">{children}</body>
+      <head>
+        <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
+      </head>
+      <body className="min-h-full">
+        <SerwistInit>{children}</SerwistInit>
+      </body>
     </html>
   );
 }
