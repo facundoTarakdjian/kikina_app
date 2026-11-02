@@ -26,7 +26,7 @@ export function buildStoragePath(
 ): string {
   const yyyy = format(date, "yyyy");
   const mm = format(date, "MM");
-  return `media/${coupleId}/${yyyy}/${mm}/${mediaId}${suffix}.webp`;
+  return `${coupleId}/${yyyy}/${mm}/${mediaId}${suffix}.webp`;
 }
 
 /**
@@ -95,7 +95,7 @@ export async function uploadMedia(file: File): Promise<UploadResult> {
   const { error: insertErr } = await supabase.from("media").insert({
     id: mediaId,
     couple_id: coupleId,
-    kind: "photo",
+    kind: "image",
     mime: "image/webp",
     storage_path: storagePath,
     thumb_path: thumbPath,

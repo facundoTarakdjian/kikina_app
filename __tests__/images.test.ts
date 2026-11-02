@@ -47,13 +47,13 @@ describe("buildStoragePath", () => {
 
   it("construye ruta main correctamente", () => {
     expect(buildStoragePath(coupleId, date, mediaId, "")).toBe(
-      "media/abc-123/2024/11/xyz-789.webp",
+      "abc-123/2024/11/xyz-789.webp",
     );
   });
 
   it("construye ruta thumb correctamente", () => {
     expect(buildStoragePath(coupleId, date, mediaId, "_thumb")).toBe(
-      "media/abc-123/2024/11/xyz-789_thumb.webp",
+      "abc-123/2024/11/xyz-789_thumb.webp",
     );
   });
 

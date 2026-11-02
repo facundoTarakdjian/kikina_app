@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { Camera, Images } from "lucide-react";
 import { uploadMedia, type UploadResult } from "@/src/lib/images/upload";
 import { createClient } from "@/src/lib/supabase/client";
 
@@ -9,7 +10,8 @@ function formatKB(bytes: number): string {
 }
 
 export default function DevSubirPage() {
-  const inputRef = useRef<HTMLInputElement>(null);
+  const cameraRef = useRef<HTMLInputElement>(null);
+  const galleryRef = useRef<HTMLInputElement>(null);
   const [status, setStatus] = useState<"idle" | "uploading" | "done" | "error">("idle");
   const [result, setResult] = useState<UploadResult | null>(null);
   const [thumbUrl, setThumbUrl] = useState<string | null>(null);
@@ -25,7 +27,6 @@ export default function DevSubirPage() {
       const res = await uploadMedia(file);
       setResult(res);
 
-      // Signed URL para la miniatura
       const supabase = createClient();
       const { data: signed } = await supabase.storage
         .from("media")
@@ -39,6 +40,14 @@ export default function DevSubirPage() {
     }
   }
 
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (file) handleFile(file);
+    e.target.value = "";
+  }
+
+  const busy = status === "uploading";
+
   return (
     <main className="min-h-full bg-paper px-6 pt-8 pb-24">
       <h1 className="text-title text-ink mb-1">Dev — Subir foto</h1>
@@ -46,30 +55,57 @@ export default function DevSubirPage() {
         Esta página se borra en L-08. Solo para probar el pipeline.
       </p>
 
+      {/* Inputs ocultos */}
       <input
-        ref={inputRef}
+        ref={cameraRef}
         type="file"
         accept="image/*"
         capture="environment"
         className="hidden"
-        onChange={(e) => {
-          const file = e.target.files?.[0];
-          if (file) handleFile(file);
-          // reset para poder subir el mismo archivo dos veces
-          e.target.value = "";
-        }}
+        onChange={handleChange}
+      />
+      <input
+        ref={galleryRef}
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={handleChange}
       />
 
-      <button
-        onClick={() => inputRef.current?.click()}
-        disabled={status === "uploading"}
-        className="
-          w-full py-4 rounded-xl bg-accent text-paper text-ui font-medium
-          disabled:opacity-50 active:scale-95 transition-transform
-        "
-      >
-        {status === "uploading" ? "Subiendo…" : "Elegir o sacar foto"}
-      </button>
+      {/* PhotoPicker: dos botones grandes (DESIGN §7) */}
+      <div className="grid grid-cols-2 gap-3">
+        <button
+          onClick={() => cameraRef.current?.click()}
+          disabled={busy}
+          className="
+            flex flex-col items-center justify-center gap-2
+            py-6 rounded-xl border-2 border-accent/40 bg-accent/5
+            text-accent text-ui font-medium
+            disabled:opacity-50 active:scale-95 transition-transform
+          "
+        >
+          <Camera size={28} strokeWidth={1.75} />
+          Sacar foto
+        </button>
+
+        <button
+          onClick={() => galleryRef.current?.click()}
+          disabled={busy}
+          className="
+            flex flex-col items-center justify-center gap-2
+            py-6 rounded-xl border-2 border-ink-2/30 bg-surface
+            text-ink text-ui font-medium
+            disabled:opacity-50 active:scale-95 transition-transform
+          "
+        >
+          <Images size={28} strokeWidth={1.75} />
+          De la galería
+        </button>
+      </div>
+
+      {busy && (
+        <p className="mt-6 text-center text-small text-ink-2">Subiendo…</p>
+      )}
 
       {status === "error" && (
         <div className="mt-6 p-4 rounded-xl bg-red-50 text-red-700 text-small">
