@@ -4,7 +4,7 @@ import Link from "next/link";
 
 // Opciones del sheet "+". Las rutas que no existen todavía están deshabilitadas.
 const ITEMS = [
-  { emoji: "📸", label: "Date", href: "/dates/nuevo", enabled: false },
+  { emoji: "📸", label: "Date", href: "/dates/nuevo", enabled: true },
   { emoji: "🖼️", label: "Fotos", href: "/recuerdos/fotos/nuevo", enabled: false },
   { emoji: "💭", label: "Pensé en vos", href: "/pensamientos/nuevo", enabled: false },
   { emoji: "✉️", label: "Sobre", href: "/sobres/nuevo", enabled: false },
