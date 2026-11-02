@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { fitDimensions } from "@/src/lib/images/compress";
 import { buildStoragePath } from "@/src/lib/images/upload";
+import { dateFromFilename } from "@/src/lib/images/exif";
 
 // ─── fitDimensions ───────────────────────────────────────────────────────────
 
@@ -65,5 +66,53 @@ describe("buildStoragePath", () => {
   it("usa año correcto", () => {
     const fecha = new Date("2026-05-25T00:00:00Z");
     expect(buildStoragePath(coupleId, fecha, mediaId, "")).toContain("/2026/");
+  });
+});
+
+// ─── dateFromFilename ────────────────────────────────────────────────────────
+
+describe("dateFromFilename", () => {
+  it("WhatsApp: IMG-20250525-WA0012", () => {
+    const d = dateFromFilename("IMG-20250525-WA0012.jpg");
+    expect(d).not.toBeNull();
+    expect(d!.getFullYear()).toBe(2025);
+    expect(d!.getMonth()).toBe(4); // mayo = 4 (0-indexed)
+    expect(d!.getDate()).toBe(25);
+  });
+
+  it("Android: IMG_20250525_123456", () => {
+    const d = dateFromFilename("IMG_20250525_123456.jpg");
+    expect(d).not.toBeNull();
+    expect(d!.getFullYear()).toBe(2025);
+    expect(d!.getMonth()).toBe(4);
+  });
+
+  it("Pixel: PXL_20241116_083045", () => {
+    const d = dateFromFilename("PXL_20241116_083045.jpg");
+    expect(d).not.toBeNull();
+    expect(d!.getFullYear()).toBe(2024);
+    expect(d!.getMonth()).toBe(10); // noviembre = 10
+    expect(d!.getDate()).toBe(16);
+  });
+
+  it("Screenshot_20250525-123456", () => {
+    const d = dateFromFilename("Screenshot_20250525-123456.png");
+    expect(d).not.toBeNull();
+    expect(d!.getFullYear()).toBe(2025);
+  });
+
+  it("Screenshot_20250525_123456", () => {
+    const d = dateFromFilename("Screenshot_20250525_123456.png");
+    expect(d).not.toBeNull();
+    expect(d!.getFullYear()).toBe(2025);
+  });
+
+  it("sin fecha en el nombre devuelve null", () => {
+    expect(dateFromFilename("photo.jpg")).toBeNull();
+    expect(dateFromFilename("image001.jpg")).toBeNull();
+  });
+
+  it("mes inválido devuelve null", () => {
+    expect(dateFromFilename("IMG_20251325_000000.jpg")).toBeNull();
   });
 });
