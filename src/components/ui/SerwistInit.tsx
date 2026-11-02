@@ -7,7 +7,10 @@ export function SerwistInit({ children }: { children: ReactNode }) {
   return (
     <SerwistProvider
       swUrl="/serwist/sw.js"
-      // reloadOnOnline=false: evita recargar la app mientras la pareja interactúa
+      // scope="/" explícito: el SW en /serwist/sw.js controla toda la app.
+      // El route handler ya devuelve "Service-Worker-Allowed: /".
+      options={{ scope: "/" }}
+      // reloadOnOnline=false: evita recargar mientras la pareja interactúa
       reloadOnOnline={false}
     >
       {children}
