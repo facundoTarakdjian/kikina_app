@@ -1,16 +1,48 @@
-import { Users } from "lucide-react";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 export default function JuntosPage() {
   return (
-    <main className="min-h-full bg-paper flex flex-col px-6 pt-6">
-      <h1 className="text-h1 text-ink mb-8">Juntos</h1>
+    <main className="min-h-full bg-paper px-4 pt-6 pb-4">
+      <h1 className="text-h1 text-ink mb-6 px-1">Juntos</h1>
 
-      <div className="flex-1 flex flex-col items-center justify-center gap-4 text-center pb-8">
-        <Users size={48} strokeWidth={1.25} className="text-ink-2" />
-        <p className="text-h3 text-ink">El lugar de lo que hacen juntos.</p>
-        <p className="text-small text-ink-2">
-          Preguntas, Discreción y sobres.
-        </p>
+      <div className="flex flex-col gap-4">
+        {/* Preguntas — habilitada */}
+        <Link
+          href="/preguntas"
+          className="flex items-center gap-5 px-5 py-6 rounded-card bg-card shadow-1 min-h-[96px] active:bg-paper-2 transition-colors"
+        >
+          <span className="text-4xl leading-none" aria-hidden="true">🎲</span>
+          <div className="flex flex-col gap-1 flex-1">
+            <span className="text-h2 text-ink">Preguntas</span>
+            <span className="text-small text-ink-2">400 preguntas para charlar</span>
+          </div>
+          <ChevronRight size={20} className="text-ink-2 shrink-0" />
+        </Link>
+
+        {/* Discreción — deshabilitada hasta L-21 */}
+        <div
+          className="flex items-center gap-5 px-5 py-6 rounded-card bg-[#1E1012] min-h-[96px] opacity-50 cursor-not-allowed"
+          aria-disabled="true"
+        >
+          <span className="text-4xl leading-none" aria-hidden="true">🔥</span>
+          <div className="flex flex-col gap-1 flex-1">
+            <span className="text-h2 text-[#F3E6E3]">Discreción</span>
+            <span className="text-small text-[#B9A7A3]">Dados y cartas para dos</span>
+          </div>
+        </div>
+
+        {/* Sobres — deshabilitados hasta E2 */}
+        <div
+          className="flex items-center gap-5 px-5 py-6 rounded-card bg-card shadow-1 min-h-[96px] opacity-40 cursor-not-allowed"
+          aria-disabled="true"
+        >
+          <span className="text-4xl leading-none" aria-hidden="true">✉️</span>
+          <div className="flex flex-col gap-1 flex-1">
+            <span className="text-h2 text-ink">Sobres</span>
+            <span className="text-small text-ink-2">Cartas para cuando…</span>
+          </div>
+        </div>
       </div>
     </main>
   );

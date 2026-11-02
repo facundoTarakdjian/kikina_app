@@ -52,6 +52,17 @@ export default async function InicioPage() {
           <p className="text-small text-ink-2">Hola, {name} 👋</p>
         )}
       </div>
+
+      {/* Accesos rápidos */}
+      <div className="mt-10 flex flex-col gap-3">
+        <Link
+          href="/preguntas"
+          className="flex items-center gap-4 px-4 py-4 rounded-card bg-card shadow-1 active:bg-paper-2 transition-colors"
+        >
+          <span className="text-2xl leading-none" aria-hidden="true">🎲</span>
+          <span className="text-h3 text-ink">Tirar pregunta</span>
+        </Link>
+      </div>
     </main>
   );
 }
