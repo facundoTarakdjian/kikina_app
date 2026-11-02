@@ -90,6 +90,11 @@ Todos los colores se definen como variables CSS en `src/app/globals.css` y se ex
 | Nivel 3 · Fuego | `#D6342F` | |
 | Nivel 4 · Sin discreción | `#9B1B30` + borde `#E8475F` | |
 
+### Alias semánticos de tokens
+| Clase Tailwind | Resuelve a | Uso específico |
+|---|---|---|
+| `bg-surface` | `--paper-2` | Fondo de campos de formulario, inputs, chips |
+
 ### Textura de papel
 SVG de ruido (`feTurbulence`) al 3–4% de opacidad sobre `--paper`, fijo (no scrollea). Desactivado en modo oscuro y en Discreción.
 

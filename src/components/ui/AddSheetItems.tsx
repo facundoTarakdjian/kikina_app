@@ -8,7 +8,7 @@ const ITEMS = [
   { emoji: "🖼️", label: "Fotos", href: "/recuerdos/fotos/nuevo", enabled: false },
   { emoji: "💭", label: "Pensé en vos", href: "/pensamientos/nuevo", enabled: false },
   { emoji: "✉️", label: "Sobre", href: "/sobres/nuevo", enabled: false },
-  { emoji: "🎲", label: "Partida", href: "/juegos/partida/nuevo", enabled: false },
+  { emoji: "🎲", label: "Partida", href: "/juegos/truco/jugar", enabled: true },
   { emoji: "🚕", label: "+1 auto amarillo", href: "/juegos/auto-amarillo", enabled: false },
 ] as const;
 
