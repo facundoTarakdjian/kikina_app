@@ -65,7 +65,7 @@
 | ☑ L-06 | Pipeline de imagen: `exifr` → compresión WebP (2048 + thumb 480) → upload a `media/{couple}/{yyyy}/{mm}/` → fila en `media`. | Subir una foto desde el celu deja dos archivos livianos en Storage y la fila con `taken_at`. | 45' |
 | ☑ L-07 | PlacePicker con proveedor Photon (abstracción `PlaceSearchProvider`), lugares ya usados primero, upsert en `places`. | Buscar "La Mezzetta" sugiere resultados; elegir uno crea/reusa el `place`. | 45' |
 | ☑ L-08 | Nuevo date en una pantalla: foto + lugar obligatorios, fecha "Hoy", acordeón opcional (comida, tipo, mi puntaje, ¿volveríamos?, nota). Guarda `entries` + `date_details` + `date_ratings`. | Cargar un date con foto y lugar en < 10 s; aparece en el feed. | 45' |
-| ☐ L-09 | Feed de recuerdos: MemoryCard, separadores de mes, URLs firmadas en lote, scroll infinito simple. | Se ven los dates con foto, lugar, fecha y puntajes. | 45' |
+| ☑ L-09 | Feed de recuerdos: MemoryCard, separadores de mes, URLs firmadas en lote, scroll infinito simple. | Se ven los dates con foto, lugar, fecha y puntajes. | 45' |
 | ☐ L-11 | Scorer **truco** (reducer puro + tests): a 30, sin flor, deshacer. | Tests: 29→30 gana, deshacer, no pasa de 30. | 30' |
 | ☐ L-14 | Infra de partida: crear `match`, guardar estado (localStorage inmediato + upsert con debounce), retomar partida en curso, terminar → `winner_id` + `match_scores`. | Cerrar la app a mitad de partida y volver la retoma igual. | 45' |
 | ☐ L-15 | UI anotador **truco**: dos columnas de fosforitos (SVG, cuadrados de 5, línea en 15), tocar = +1, UndoBar, pantalla de ganador con "Revancha". | Se juega una partida entera en el celu y queda en el historial. | 45' |
