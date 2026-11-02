@@ -1,26 +1,203 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ═══════════════════════════════════════════════════════════════════
+   TOKENS — Kikiña claro (default)
+   ═══════════════════════════════════════════════════════════════════ */
+:root,
+[data-theme="light"] {
+  --paper:        #F7F2EA;
+  --paper-2:      #EFE7DA;
+  --card:         #FFFDF9;
+  --line:         #E3D8C8;
+  --ink:          #2A211C;
+  --ink-2:        #6B5D53;
+  --accent:       #A9512D;
+  --accent-deco:  #C2643C;
+  --accent-soft:  #F1DCCF;
+  --facu:         #3F5A73;
+  --kiki:         #A9512D;
+  --ok:           #5E7D5A;
+  --danger:       #B03A2E;
+  --shadow-1:     0 1px 2px rgb(42 33 28 / .06), 0 4px 16px rgb(42 33 28 / .05);
+  color-scheme:   light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* ═══════════════════════════════════════════════════════════════════
+   TOKENS — Kikiña oscuro (sigue al sistema)
+   ═══════════════════════════════════════════════════════════════════ */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --paper:        #1B1613;
+    --paper-2:      #231D19;
+    --card:         #2A231E;
+    --line:         #3A302A;
+    --ink:          #F2EAE0;
+    --ink-2:        #B5A799;
+    --accent:       #E07B4F;
+    --accent-deco:  #E07B4F;
+    --accent-soft:  #3A2519;
+    --facu:         #7FA3C2;
+    --kiki:         #E07B4F;
+    --shadow-1:     0 1px 2px rgb(0 0 0 / .3), 0 4px 16px rgb(0 0 0 / .25);
+    color-scheme:   dark;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Alias para forzar oscuro en /dev/ui */
+[data-theme="dark"] {
+  --paper:        #1B1613;
+  --paper-2:      #231D19;
+  --card:         #2A231E;
+  --line:         #3A302A;
+  --ink:          #F2EAE0;
+  --ink-2:        #B5A799;
+  --accent:       #E07B4F;
+  --accent-deco:  #E07B4F;
+  --accent-soft:  #3A2519;
+  --facu:         #7FA3C2;
+  --kiki:         #E07B4F;
+  --shadow-1:     0 1px 2px rgb(0 0 0 / .3), 0 4px 16px rgb(0 0 0 / .25);
+  color-scheme:   dark;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   TOKENS — Discreción (siempre oscuro, independiente del sistema)
+   ═══════════════════════════════════════════════════════════════════ */
+[data-theme="discrecion"] {
+  /* Tokens estándar remapeados → se usan con bg-paper, text-ink, etc. */
+  --paper:        #120A0B;
+  --paper-2:      #1E1012;
+  --card:         #1E1012;
+  --line:         #3A1E22;
+  --ink:          #F3E6E3;
+  --ink-2:        #B9A7A3;
+  --accent:       #B3243A;
+  --accent-deco:  #E8475F;
+  --accent-soft:  #2A1015;
+  --shadow-1:     0 1px 4px rgb(0 0 0 / .5), 0 4px 20px rgb(0 0 0 / .4);
+
+  /* Tokens propios de Discreción */
+  --d-glow:           #E8475F;
+  --d-level-1:        #E8A0A0;
+  --d-level-2:        #E46A5E;
+  --d-level-3:        #D6342F;
+  --d-level-4:        #9B1B30;
+  --d-level-4-border: #E8475F;
+
+  color-scheme: dark;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   TAILWIND THEME — expone tokens como utilidades (bg-paper, text-ink…)
+   ═══════════════════════════════════════════════════════════════════ */
+@theme inline {
+  /* Colores */
+  --color-paper:        var(--paper);
+  --color-paper-2:      var(--paper-2);
+  --color-card:         var(--card);
+  --color-line:         var(--line);
+  --color-ink:          var(--ink);
+  --color-ink-2:        var(--ink-2);
+  --color-accent:       var(--accent);
+  --color-accent-deco:  var(--accent-deco);
+  --color-accent-soft:  var(--accent-soft);
+  --color-facu:         var(--facu);
+  --color-kiki:         var(--kiki);
+  --color-ok:           var(--ok);
+  --color-danger:       var(--danger);
+  --color-d-glow:       var(--d-glow, #E8475F);
+  --color-d-level-1:    var(--d-level-1, #E8A0A0);
+  --color-d-level-2:    var(--d-level-2, #E46A5E);
+  --color-d-level-3:    var(--d-level-3, #D6342F);
+  --color-d-level-4:    var(--d-level-4, #9B1B30);
+
+  /* Fuentes (cargadas con next/font en layout.tsx) */
+  --font-sans:      var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif:     var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-wordmark:  var(--font-young-serif), ui-serif, Georgia, serif;
+
+  /* Radios */
+  --radius-card:  20px;
+  --radius-btn:   14px;
+
+  /* Sombra */
+  --shadow-card:  var(--shadow-1);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   BASE
+   ═══════════════════════════════════════════════════════════════════ */
+html {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  /* Textura de papel: fija, solo en claro (se oculta bajo fondos opacos en oscuro/Discreción) */
+  background-image: url('/paper-noise.svg');
+  background-attachment: fixed;
+  background-size: 200px 200px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html { background-image: none; }
+}
+
+/* Foco visible */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+[data-theme="discrecion"] :focus-visible {
+  outline-color: var(--d-glow);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   ESCALA TIPOGRÁFICA — DESIGN §4
+   ═══════════════════════════════════════════════════════════════════ */
+@layer components {
+  .text-display {
+    font-family: var(--font-fraunces), ui-serif, Georgia, serif;
+    font-size:   2.5rem;    /* 40px */
+    line-height: 2.75rem;   /* 44px */
+    font-weight: 500;
+  }
+  .text-h1 {
+    font-family: var(--font-fraunces), ui-serif, Georgia, serif;
+    font-size:   1.875rem;  /* 30px */
+    line-height: 2.25rem;   /* 36px */
+    font-weight: 500;
+  }
+  .text-h2 {
+    font-family: var(--font-fraunces), ui-serif, Georgia, serif;
+    font-size:   1.375rem;  /* 22px */
+    line-height: 1.75rem;   /* 28px */
+    font-weight: 500;
+  }
+  .text-h3 {
+    font-family: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+    font-size:   1.0625rem; /* 17px */
+    line-height: 1.5rem;    /* 24px */
+    font-weight: 600;
+  }
+  .text-small {
+    font-family: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+    font-size:   0.875rem;  /* 14px */
+    line-height: 1.25rem;   /* 20px */
+    font-weight: 400;
+  }
+  .text-caption {
+    font-family:    var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+    font-size:      0.75rem;  /* 12px */
+    line-height:    1rem;     /* 16px */
+    font-weight:    500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .text-score {
+    font-family:         var(--font-fraunces), ui-serif, Georgia, serif;
+    font-size:           3.5rem;  /* 56px */
+    line-height:         3.75rem; /* 60px */
+    font-weight:         500;
+    font-variant-numeric: tabular-nums;
+  }
 }
