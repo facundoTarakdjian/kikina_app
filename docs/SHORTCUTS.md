@@ -20,7 +20,7 @@ Esta guía arma los botones de "un toque" para cargar cosas sin abrir la app:
 
 1. **Generar un token** en la app: *Ajustes → Atajos → Nuevo token* (por ejemplo, "iPhone de Kiki"). Se muestra **una sola vez**: copialo.
    Formato: `kk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`.
-2. URL base: `https://kikina.vercel.app`
+2. URL base: `https://kikina-app.vercel.app`
 3. Todas las llamadas llevan el header:
    ```
    Authorization: Bearer kk_XXXXXXXX…
@@ -41,18 +41,18 @@ Nombres de acciones en castellano (iOS en español). Entre paréntesis, el nombr
 ### 1.1 🔌 Probar conexión
 1. **Texto** (*Text*): `kk_XXXXXXXX…` → renombrar la variable a `Token` (tocá el resultado → *Renombrar*).
 2. **Obtener contenido de URL** (*Get Contents of URL*)
-   - URL: `https://kikina.vercel.app/api/v1/ping`
+   - URL: `https://kikina-app.vercel.app/api/v1/ping`
    - Método: `GET`
    - Encabezados: `Authorization` = `Bearer ` + variable **Token**
 3. **Obtener valor del diccionario** (*Get Dictionary Value*): clave `user`.
 4. **Mostrar notificación** (*Show Notification*): `Conectado como ` + **Valor del diccionario**.
 
-Si dice "Conectado como Kiki", el token anda. La primera vez, iOS pregunta si permitís conectarte a `kikina.vercel.app` → **Permitir siempre**.
+Si dice "Conectado como Kiki", el token anda. La primera vez, iOS pregunta si permitís conectarte a `kikina-app.vercel.app` → **Permitir siempre**.
 
 ### 1.2 💭 Pensé en vos (un toque)
 1. **Texto**: token → `Token`.
 2. **Obtener contenido de URL**
-   - URL: `https://kikina.vercel.app/api/v1/thoughts`
+   - URL: `https://kikina-app.vercel.app/api/v1/thoughts`
    - Método: `POST`
    - Encabezados: `Authorization` = `Bearer ` + **Token**
    - Cuerpo de la solicitud: **JSON** → sin campos (o `message` vacío).
@@ -74,7 +74,7 @@ Máximo 140 caracteres (el servidor corta lo que sobre).
 ### 1.4 🚕 Auto amarillo
 1. **Texto**: token → `Token`.
 2. **Obtener contenido de URL**
-   - URL: `https://kikina.vercel.app/api/v1/counter/auto-amarillo`
+   - URL: `https://kikina-app.vercel.app/api/v1/counter/auto-amarillo`
    - Método: `POST`
    - Encabezados: `Authorization` = `Bearer ` + **Token**
    - Cuerpo: **JSON** → `delta` (Número) = `1`
@@ -108,7 +108,7 @@ El más largo, pero se arma una sola vez. Objetivo: tap → foto → elegir luga
    - *Dirección* → `Direccion`
 9. **Texto**: token → `Token`.
 10. **Obtener contenido de URL**
-    - URL: `https://kikina.vercel.app/api/v1/dates`
+    - URL: `https://kikina-app.vercel.app/api/v1/dates`
     - Método: `POST`
     - Encabezados: `Authorization` = `Bearer ` + **Token**
     - Cuerpo de la solicitud: **Formulario** (*Form*):
@@ -132,7 +132,7 @@ Puntajes, qué comieron, etc. se completan después en la app (si tienen ganas).
    2. **Redimensionar imagen**: ancho `1600`.
    3. **Convertir imagen**: JPEG, calidad `0.8`, *Conservar metadatos* activado.
    4. **Obtener contenido de URL**
-      - URL: `https://kikina.vercel.app/api/v1/media`
+      - URL: `https://kikina-app.vercel.app/api/v1/media`
       - Método: `POST`
       - Encabezados: `Authorization` = `Bearer ` + **Token**
       - Cuerpo: **Formulario** → `files` (Archivo) = **Imagen convertida**, `date` (Texto) = **Fecha**
@@ -157,7 +157,7 @@ Sugerencia: crear una **carpeta "Ki<i"** en la app Atajos con los 6 atajos y usa
 ## 2. Android (Facu)
 
 ### 2.1 Compartir → Ki<i (nativo)
-1. Abrir `https://kikina.vercel.app` en **Chrome** → menú ⋮ → **Instalar app**.
+1. Abrir `https://kikina-app.vercel.app` en **Chrome** → menú ⋮ → **Instalar app**.
 2. Listo: en la galería o Google Fotos, *Compartir* → aparece **Ki<i**. Abre la pantalla de subida con las fotos (fecha leída del EXIF).
    (Funciona por *Web Share Target*; no necesita token.)
 
@@ -166,7 +166,7 @@ App gratuita y de código abierto (*HTTP Shortcuts*, de Waboodoo, en Play Store 
 
 **Configuración común (una vez):**
 1. *Variables* → nueva variable **Constante** `kk_token` = tu token.
-2. *Variables* → nueva variable **Constante** `kk_base` = `https://kikina.vercel.app`.
+2. *Variables* → nueva variable **Constante** `kk_base` = `https://kikina-app.vercel.app`.
 
 **💭 Pensé en vos**
 - Nuevo atajo → *Solicitud HTTP normal*.
@@ -212,8 +212,8 @@ Ideal: **tile de Ajustes rápidos para "Pensé en vos"** y **"Auto amarillo"** (
 
 Prueba desde la compu:
 ```bash
-curl -s https://kikina.vercel.app/api/v1/ping -H "Authorization: Bearer kk_XXXX"
-curl -s -X POST https://kikina.vercel.app/api/v1/thoughts \
+curl -s https://kikina-app.vercel.app/api/v1/ping -H "Authorization: Bearer kk_XXXX"
+curl -s -X POST https://kikina-app.vercel.app/api/v1/thoughts \
   -H "Authorization: Bearer kk_XXXX" -H "Content-Type: application/json" \
   -d '{"message":"probando"}'
 ```

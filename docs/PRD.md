@@ -102,7 +102,7 @@ Lo que se necesita para empezar a usarla ya. Ver `ROADMAP.md` para el orden (Hit
 - Apodos, chistes internos o rituales en la UI (salvo el nombre "Discreción").
 - Estado de ánimo en las entradas.
 - Borradores privados.
-- Dominio propio (por ahora `kikina.vercel.app`).
+- Dominio propio (por ahora `kikina-app.vercel.app`).
 - Registro público o más de dos usuarios.
 
 ---

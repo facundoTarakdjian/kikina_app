@@ -680,7 +680,7 @@ Más la precarga inicial (~100 fotos, ~40 MB) → **unos 4–5 años** en el pla
 
 ## 7. Lugares y mapa
 
-- **Búsqueda:** Google Places API (New): Autocomplete + Place Details con *field mask* mínimo (`id, displayName, formattedAddress, location`). Usar *session tokens* para que autocomplete + details cuenten como una sesión. Con 2 usuarios el uso queda muy por debajo del cupo gratuito mensual (verificar los cupos vigentes en la consola de Google Cloud; requiere cargar una tarjeta). La key se restringe por HTTP referrer (`kikina.vercel.app/*`) y solo a Places API.
+- **Búsqueda:** Google Places API (New): Autocomplete + Place Details con *field mask* mínimo (`id, displayName, formattedAddress, location`). Usar *session tokens* para que autocomplete + details cuenten como una sesión. Con 2 usuarios el uso queda muy por debajo del cupo gratuito mensual (verificar los cupos vigentes en la consola de Google Cloud; requiere cargar una tarjeta). La key se restringe por HTTP referrer (`kikina-app.vercel.app/*`) y solo a Places API.
 - **Fallback sin tarjeta:** Photon (`photon.komoot.io`, OSM) para autocomplete. Peor con restaurantes chicos, pero gratis y sin key. El código abstrae `PlaceSearchProvider` para cambiar sin tocar la UI.
 - **Desde Atajos:** iOS manda `place_name` + `lat/lng` (de "Obtener ubicación actual"); el servidor busca un `place` existente a < 80 m con nombre similar o crea uno `provider='apple'`.
 - **Mapa:** MapLibre GL + estilo de OpenFreeMap (gratis, sin key). Clustering de pins nativo de MapLibre. Colores de pins según `DESIGN.md`.
@@ -840,7 +840,7 @@ kikina/
 | `VAPID_SUBJECT` | servidor | `mailto:facundo@…` |
 | `NEXT_PUBLIC_GOOGLE_PLACES_KEY` | cliente | Autocomplete (restringida por referrer) |
 | `PLACES_PROVIDER` | cliente | `google` \| `photon` |
-| `NEXT_PUBLIC_APP_URL` | ambos | `https://kikina.vercel.app` |
+| `NEXT_PUBLIC_APP_URL` | ambos | `https://kikina-app.vercel.app` |
 | `GOOGLE_DRIVE_FOLDER_ID` | GitHub Actions (v1) | Carpeta destino del backup |
 | `GOOGLE_SERVICE_ACCOUNT_JSON` | GitHub Actions (v1) | Credencial para subir a Drive |
 | `SUPABASE_DB_URL` | GitHub Actions (v1) | `pg_dump` |
