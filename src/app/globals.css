@@ -105,6 +105,7 @@
   --color-kiki:         var(--kiki);
   --color-ok:           var(--ok);
   --color-danger:       var(--danger);
+  --color-surface:      var(--paper-2);
   --color-d-glow:       var(--d-glow, #E8475F);
   --color-d-level-1:    var(--d-level-1, #E8A0A0);
   --color-d-level-2:    var(--d-level-2, #E46A5E);
@@ -178,6 +179,18 @@ html {
     font-size:   1.0625rem; /* 17px */
     line-height: 1.5rem;    /* 24px */
     font-weight: 600;
+  }
+  .text-body {
+    font-family: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+    font-size:   1rem;    /* 16px */
+    line-height: 1.5rem;  /* 24px */
+    font-weight: 400;
+  }
+  .text-ui {
+    font-family: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+    font-size:   0.9375rem; /* 15px */
+    line-height: 1.25rem;   /* 20px */
+    font-weight: 500;
   }
   .text-small {
     font-family: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;

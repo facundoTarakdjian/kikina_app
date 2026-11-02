@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { format } from "date-fns";
-import { ChevronDown, ChevronUp, MapPin, Calendar } from "lucide-react";
+import { X, ChevronDown, ChevronUp, MapPin, Calendar } from "lucide-react";
 import { PhotoPicker } from "@/src/components/ui/PhotoPicker";
 import { PlacePicker, type SavedPlace } from "@/src/components/ui/PlacePicker";
 import { readExif } from "@/src/lib/images/exif";
@@ -45,9 +45,7 @@ export default function NuevoDatePage() {
   const [place, setPlace] = useState<SavedPlace | null>(null);
 
   // fecha
-  const [dateStr, setDateStr] = useState<string>(
-    format(new Date(), "yyyy-MM-dd"),
-  );
+  const [dateStr, setDateStr] = useState<string>(format(new Date(), "yyyy-MM-dd"));
   const [dateFromExif, setDateFromExif] = useState(false);
 
   // acordeón
@@ -58,23 +56,32 @@ export default function NuevoDatePage() {
   const [wouldReturn, setWouldReturn] = useState<WouldReturn | null>(null);
   const [note, setNote] = useState("");
 
-  // estado de guardado
+  // estado de guardado y confirmación de descarte
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [discardConfirm, setDiscardConfirm] = useState(false);
 
   const canSave = !!file && !!place && !saving;
 
-  // ── handlers de foto ──────────────────────────────────────────────────────
+  // ── back ──────────────────────────────────────────────────────────────────
+
+  function handleBack() {
+    if (file) {
+      setDiscardConfirm(true);
+    } else {
+      router.back();
+    }
+  }
+
+  // ── foto ──────────────────────────────────────────────────────────────────
 
   async function handlePhotoChange(f: File) {
-    // Revocar URL anterior
     if (prevUrlRef.current) URL.revokeObjectURL(prevUrlRef.current);
     const url = URL.createObjectURL(f);
     prevUrlRef.current = url;
     setFile(f);
     setPreviewUrl(url);
 
-    // Intentar extraer fecha del EXIF/nombre
     const exif = await readExif(f);
     if (exif.takenAt) {
       setDateStr(format(exif.takenAt, "yyyy-MM-dd"));
@@ -102,11 +109,11 @@ export default function NuevoDatePage() {
     try {
       const supabase = createClient();
 
-      // 1. Subir media
       const media = await uploadMedia(file);
 
-      // 2. Obtener couple_id del perfil
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (!user) throw new Error("Tenés que estar logueado.");
       const { data: profile } = await supabase
         .from("profiles")
@@ -116,14 +123,12 @@ export default function NuevoDatePage() {
       if (!profile) throw new Error("No se encontró tu perfil.");
       const coupleId = profile.couple_id;
 
-      // 3. Crear entry
-      const occurredOn = dateStr;
       const { data: entry, error: entryErr } = await supabase
         .from("entries")
         .insert({
           couple_id: coupleId,
           type: "date",
-          occurred_on: occurredOn,
+          occurred_on: dateStr,
           place_id: place.id,
           cover_media_id: media.mediaId,
         })
@@ -136,13 +141,11 @@ export default function NuevoDatePage() {
         );
       }
 
-      // 4. Vincular media al entry
       await supabase
         .from("media")
         .update({ entry_id: entry.id })
         .eq("id", media.mediaId);
 
-      // 5. date_details (solo si hay algo)
       if (food || kind || wouldReturn || note) {
         await supabase.from("date_details").insert({
           entry_id: entry.id,
@@ -153,7 +156,6 @@ export default function NuevoDatePage() {
         });
       }
 
-      // 6. date_rating (solo si hay puntaje)
       if (score !== null) {
         await supabase.from("date_ratings").insert({
           entry_id: entry.id,
@@ -162,8 +164,7 @@ export default function NuevoDatePage() {
         });
       }
 
-      // 7. Navegar a recuerdos
-      router.push("/recuerdos");
+      router.push(`/recuerdos?new=${entry.id}`);
       router.refresh();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error inesperado.");
@@ -175,11 +176,45 @@ export default function NuevoDatePage() {
   // ── render ────────────────────────────────────────────────────────────────
 
   return (
-    <main className="min-h-full bg-paper flex flex-col">
-      {/* Scroll area */}
-      <div className="flex-1 overflow-y-auto px-5 pt-6 pb-28 space-y-5">
-        <h1 className="text-h1 text-ink">Nuevo date</h1>
+    <main className="flex flex-col min-h-dvh bg-paper">
+      {/* Header modo foco */}
+      <header className="
+        flex items-center justify-between shrink-0
+        px-5 pt-[max(20px,env(safe-area-inset-top))] pb-3
+        border-b border-line bg-paper
+      ">
+        <button
+          onClick={handleBack}
+          aria-label="Volver"
+          className="w-10 h-10 -ml-2 flex items-center justify-center rounded-full active:bg-paper-2 transition-colors"
+        >
+          <X size={22} strokeWidth={1.75} className="text-ink" />
+        </button>
+        <span className="text-h3 text-ink">Nuevo date</span>
+        <div className="w-10" />
+      </header>
 
+      {/* Confirmación de descarte */}
+      {discardConfirm && (
+        <div className="shrink-0 flex items-center gap-3 px-5 py-3 bg-accent-soft border-b border-line">
+          <span className="text-small text-ink flex-1">¿Descartamos este date?</span>
+          <button
+            onClick={() => router.back()}
+            className="text-small font-medium text-danger"
+          >
+            Descartar
+          </button>
+          <button
+            onClick={() => setDiscardConfirm(false)}
+            className="text-small font-medium text-ink"
+          >
+            Seguir
+          </button>
+        </div>
+      )}
+
+      {/* Área scrolleable */}
+      <div className="flex-1 overflow-y-auto px-5 pt-5 pb-28 space-y-5">
         {/* Foto */}
         <section>
           <PhotoPicker
@@ -210,11 +245,7 @@ export default function NuevoDatePage() {
               <span className="text-small text-ink-2 shrink-0">cambiar</span>
             </button>
           ) : (
-            <PlacePicker
-              onSelect={setPlace}
-              nearLat={null}
-              nearLng={null}
-            />
+            <PlacePicker onSelect={setPlace} nearLat={null} nearLng={null} />
           )}
         </section>
 
@@ -224,14 +255,17 @@ export default function NuevoDatePage() {
           <input
             type="date"
             value={dateStr}
-            onChange={(e) => { setDateStr(e.target.value); setDateFromExif(false); }}
+            onChange={(e) => {
+              setDateStr(e.target.value);
+              setDateFromExif(false);
+            }}
             className="
               flex-1 py-2 px-3 rounded-xl bg-surface border border-line
               text-body text-ink focus:outline-none focus:border-accent
             "
           />
           {dateFromExif && (
-            <span className="text-small text-ink-2 shrink-0">EXIF</span>
+            <span className="text-small text-ink-2 shrink-0">del EXIF</span>
           )}
         </section>
 
@@ -239,10 +273,7 @@ export default function NuevoDatePage() {
         <section className="border border-line rounded-xl overflow-hidden">
           <button
             onClick={() => setOpen((o) => !o)}
-            className="
-              w-full flex items-center justify-between px-4 py-3
-              text-body text-ink-2 hover:bg-surface transition-colors
-            "
+            className="w-full flex items-center justify-between px-4 py-3 text-body text-ink-2 hover:bg-surface transition-colors"
             aria-expanded={open}
           >
             <span>Agregar detalles (opcional)</span>
@@ -251,7 +282,6 @@ export default function NuevoDatePage() {
 
           {open && (
             <div className="px-4 pb-4 pt-2 space-y-4 border-t border-line">
-              {/* Qué comieron */}
               <div>
                 <label className="text-small text-ink-2 mb-1 block">¿Qué comieron?</label>
                 <input
@@ -259,15 +289,10 @@ export default function NuevoDatePage() {
                   value={food}
                   onChange={(e) => setFood(e.target.value)}
                   placeholder="Milanesa napolitana…"
-                  className="
-                    w-full px-3 py-2 rounded-lg bg-surface border border-line
-                    text-body text-ink placeholder:text-ink-2
-                    focus:outline-none focus:border-accent
-                  "
+                  className="w-full px-3 py-2 rounded-lg bg-surface border border-line text-body text-ink placeholder:text-ink-2 focus:outline-none focus:border-accent"
                 />
               </div>
 
-              {/* Tipo */}
               <div>
                 <label className="text-small text-ink-2 mb-2 block">Tipo</label>
                 <div className="flex flex-wrap gap-2">
@@ -275,13 +300,11 @@ export default function NuevoDatePage() {
                     <button
                       key={k}
                       onClick={() => setKind(kind === k ? null : k)}
-                      className={`
-                        px-3 py-1.5 rounded-full text-small transition-colors
-                        ${kind === k
+                      className={`px-3 py-1.5 rounded-full text-small transition-colors ${
+                        kind === k
                           ? "bg-accent text-paper"
                           : "bg-surface border border-line text-ink"
-                        }
-                      `}
+                      }`}
                     >
                       {KIND_LABELS[k]}
                     </button>
@@ -289,7 +312,6 @@ export default function NuevoDatePage() {
                 </div>
               </div>
 
-              {/* Mi puntaje */}
               <div>
                 <label className="text-small text-ink-2 mb-2 block">
                   Mi puntaje{score !== null ? ` — ${score}` : ""}
@@ -299,13 +321,11 @@ export default function NuevoDatePage() {
                     <button
                       key={n}
                       onClick={() => setScore(score === n ? null : n)}
-                      className={`
-                        w-9 h-9 rounded-lg text-body font-medium transition-colors
-                        ${score === n
+                      className={`w-9 h-9 rounded-lg text-body font-medium transition-colors ${
+                        score === n
                           ? "bg-accent text-paper"
                           : "bg-surface border border-line text-ink"
-                        }
-                      `}
+                      }`}
                     >
                       {n}
                     </button>
@@ -313,7 +333,6 @@ export default function NuevoDatePage() {
                 </div>
               </div>
 
-              {/* ¿Volveríamos? */}
               <div>
                 <label className="text-small text-ink-2 mb-2 block">¿Volveríamos?</label>
                 <div className="flex gap-2">
@@ -321,13 +340,11 @@ export default function NuevoDatePage() {
                     <button
                       key={w}
                       onClick={() => setWouldReturn(wouldReturn === w ? null : w)}
-                      className={`
-                        flex-1 py-2 rounded-lg text-body transition-colors
-                        ${wouldReturn === w
+                      className={`flex-1 py-2 rounded-lg text-body transition-colors ${
+                        wouldReturn === w
                           ? "bg-accent text-paper"
                           : "bg-surface border border-line text-ink"
-                        }
-                      `}
+                      }`}
                     >
                       {WOULD_RETURN_LABELS[w]}
                     </button>
@@ -335,7 +352,6 @@ export default function NuevoDatePage() {
                 </div>
               </div>
 
-              {/* Nota */}
               <div>
                 <label className="text-small text-ink-2 mb-1 block">Nota</label>
                 <textarea
@@ -343,11 +359,7 @@ export default function NuevoDatePage() {
                   onChange={(e) => setNote(e.target.value)}
                   placeholder="Algo para recordar…"
                   rows={3}
-                  className="
-                    w-full px-3 py-2 rounded-lg bg-surface border border-line
-                    text-body text-ink placeholder:text-ink-2 resize-none
-                    focus:outline-none focus:border-accent
-                  "
+                  className="w-full px-3 py-2 rounded-lg bg-surface border border-line text-body text-ink placeholder:text-ink-2 resize-none focus:outline-none focus:border-accent"
                 />
               </div>
             </div>
@@ -355,25 +367,20 @@ export default function NuevoDatePage() {
         </section>
 
         {error && (
-          <div className="p-4 rounded-xl bg-red-50 text-red-700 text-small">
-            {error}
-          </div>
+          <div className="p-4 rounded-xl bg-red-50 text-red-700 text-small">{error}</div>
         )}
       </div>
 
-      {/* Botón fijo abajo */}
+      {/* Guardar fijo abajo (no hay BottomNav en modo foco) */}
       <div className="
         fixed bottom-0 left-0 right-0 z-20
         bg-paper border-t border-line px-5
-        pb-[calc(16px+env(safe-area-inset-bottom))] pt-3
+        pt-3 pb-[calc(16px+env(safe-area-inset-bottom))]
       ">
         <button
           onClick={handleSave}
           disabled={!canSave}
-          className="
-            w-full py-4 rounded-xl bg-accent text-paper text-ui font-medium
-            disabled:opacity-40 active:scale-[0.98] transition-transform
-          "
+          className="w-full py-4 rounded-xl bg-accent text-paper text-ui font-medium disabled:opacity-40 active:scale-[0.98] transition-transform"
         >
           {saving ? "Guardando…" : "Guardar"}
         </button>
