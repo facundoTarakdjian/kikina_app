@@ -6,6 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: "Ki<i",
     description: "Nuestra vida en recuerdos",
     start_url: "/inicio",
+    scope: "/",
     display: "standalone",
     orientation: "portrait",
     background_color: "#F7F2EA",

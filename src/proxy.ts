@@ -8,9 +8,15 @@ export async function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Excluir archivos estáticos y rutas internas de Next.js.
-     * Patrón recomendado por @supabase/ssr.
+     * Excluir:
+     *  - Todo _next/ (chunks, static, image, etc.)
+     *  - Rutas públicas de la PWA: manifest, SW, íconos, brand, robots, favicon
+     *  - Archivos estáticos por extensión (imágenes, fuentes, audio, vídeo)
+     *
+     * Chrome pide manifest.webmanifest, /serwist/*.js e íconos sin cookies
+     * durante el proceso de instalación. Si el proxy los intercepta, redirige
+     * a /login y la instalación falla.
      */
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    "/((?!_next/|serwist/|manifest\\.webmanifest|robots\\.txt|favicon|apple-touch-icon|brand/|splash/|icons/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|woff2?|ttf|otf|mp3|mp4|webm)$).*)",
   ],
 };
