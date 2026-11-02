@@ -47,7 +47,7 @@
 | ☐ E0-01 | Crear repo: Next.js (App Router) + TypeScript estricto + Tailwind + ESLint/Prettier + Vitest + pnpm. Copiar `docs/` y `CLAUDE.md`. | `pnpm dev` levanta una página "Ki<i" y `pnpm test` corre. Repo privado en GitHub. | 30' |
 | ☑ E0-02 | Proyecto Supabase: deshabilitar signups, crear los 2 usuarios (mails confirmados), plantilla de mail con `{{ .Token }}` sin link. | Desde el dashboard se puede mandar un OTP a cada mail y llega el código. | 30' |
 | ☑ E0-03 | Supabase CLI: `supabase link`, migración `0001_init.sql` (de TECH_SPEC §4), `supabase gen types` → `src/types/database.ts`. | `supabase db push` sin errores; tipos generados. | 30' |
-| ☐ E0-04 | Seed: `couple`, `profiles`, juegos base y `scripts/seed.ts` para preguntas y Discreción (JSON en `supabase/seed-data/`). | Tablas con 400 preguntas, 60 caras, 200 cartas, 80 ideas, 5 juegos. | 30' |
+| ☑ E0-04 | Seed: `couple`, `profiles`, juegos base y `scripts/seed.ts` para preguntas y Discreción (JSON en `supabase/seed-data/`). | Tablas con 400 preguntas, 60 caras, 200 cartas, 80 ideas, 5 juegos. | 30' |
 | ☐ E0-05 | Deploy en Vercel (`kikina.vercel.app`), variables de entorno, `robots.txt` + meta `noindex`. | La URL pública carga; no aparece en buscadores. | 30' |
 
 ---
