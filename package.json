@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "seed": "tsx scripts/seed.ts",
-    "db:types": "supabase gen types typescript --linked > src/types/database.ts"
+    "db:push": "supabase db push --remote",
+    "db:types": "supabase gen types typescript --remote > src/types/database.ts"
   },
   "dependencies": {
     "next": "16.4.3",
@@ -33,6 +34,7 @@
     "happy-dom": "^21.0.4",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
+    "supabase": "3.0.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^2.1.9"
