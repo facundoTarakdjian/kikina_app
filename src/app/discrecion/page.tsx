@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { X } from "lucide-react";
 import { LevelPicker } from "@/src/components/discretion/LevelPicker";
 
 const LS_KEY = "kk:d:level";
@@ -38,6 +39,22 @@ export default function DiscrecionPage() {
   }
 
   return (
+    <>
+      {/* Header: ✕ → /juntos (salir de Discreción) */}
+      <header
+        className="flex items-center px-4 pb-2"
+        style={{ paddingTop: "max(16px, env(safe-area-inset-top))" }}
+      >
+        <Link
+          href="/juntos"
+          aria-label="Salir de Discreción"
+          className="p-2 -ml-2"
+          style={{ color: "var(--d-ink-2)" }}
+        >
+          <X size={20} />
+        </Link>
+      </header>
+
     <main className="flex-1 px-5 pb-8 overflow-y-auto">
       {/* Título */}
       <h1
@@ -128,5 +145,6 @@ export default function DiscrecionPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

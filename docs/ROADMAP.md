@@ -85,7 +85,7 @@
 | ☑ L-18 | **Auto amarillo**: `counter_events`, botones +1 en la tarjeta del juego, mantener apretado = anular último, total eterno. | Sumar y anular funcionan; total correcto en los dos celulares. | 20' |
 | ☐ L-19 | Pantalla **Juegos** (tarjetas con marcador total "Facu 12 – Kiki 15", partida en curso) + **detalle de juego** con historial. | Marcadores coinciden con el historial. | 45' |
 | ☑ L-21 | **Discreción** base: layout siempre oscuro, LevelPicker (4 niveles), home con modos. | Entrar a Discreción cambia todo a oscuro, sin importar el modo del celu. | 20' |
-| ☐ L-22 | Discreción **dados**: 3 dados con caras por nivel (peso 60% al nivel elegido), animación, resultado como frase. | En Chispa nunca sale una cara de nivel 3–4. | 30' |
+| ☑ L-22 | Discreción **dados**: 3 dados con caras por nivel (peso 60% al nivel elegido), animación, resultado como frase. | En Chispa nunca sale una cara de nivel 3–4. | 30' |
 | ☐ L-23 | Discreción **cartas**: turno alternado ("Kiki → Facu"), verdad/reto alternados, "Pasar", "subir de nivel cada 5". | Una sesión de 20 cartas sin repetir y respetando el nivel. | 45' |
 | ☐ L-24 | Pulido Lite: estados vacíos, microcopy (DESIGN §10), modo oscuro, prueba en ambos celulares. | Checklist de DESIGN §11 cumplido. | 60' |
 | ☐ B-✔ | **Entrega posible**: precargar algunos dates del pasado a mano y dársela. 🎁 | — | — |

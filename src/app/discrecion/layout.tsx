@@ -1,6 +1,4 @@
 import type { Viewport } from "next";
-import Link from "next/link";
-import { X } from "lucide-react";
 import { DiscrecionTheme } from "./DiscrecionTheme";
 
 export const viewport: Viewport = {
@@ -27,20 +25,7 @@ export default function DiscrecionLayout({
       <DiscrecionTheme />
 
       <div className="flex flex-col min-h-dvh bg-paper">
-        {/* Header: solo ✕ → /juntos */}
-        <header
-          className="flex items-center px-4 pb-2"
-          style={{ paddingTop: "max(16px, env(safe-area-inset-top))" }}
-        >
-          <Link
-            href="/juntos"
-            aria-label="Salir de Discreción"
-            className="p-2 -ml-2 text-ink-2"
-          >
-            <X size={20} />
-          </Link>
-        </header>
-
+        {/* Cada página dentro de /discrecion renderiza su propio header con la navegación correcta */}
         {children}
       </div>
     </>
