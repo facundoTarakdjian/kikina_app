@@ -170,7 +170,7 @@ Respetar el tamaño de texto del sistema: usar `rem`, sin `maximum-scale` en el 
 | **MemoryCard** | Foto a sangre (proporción 4:5), debajo: lugar (h3), fecha como `caption` tipo sello, puntajes chiquitos si es date (●7 ●9 con colores de cada uno). Marca ✨ si es primera vez. Reacciones abajo a la derecha. |
 | **PolaroidCard** | Variante solo para capítulos y resúmenes: borde blanco 10 px (28 px abajo), leve rotación aleatoria ±1.5°, sombra 1. Texto de abajo en Instrument Sans (no manuscrita). |
 | **ChapterHeader** | Foto de portada a lo ancho con degradé inferior, título del mes en Fraunces ("Noviembre 2024"), subtítulo con conteo ("4 dates · 23 fotos · 1 viaje"). |
-| **DayCounter** | `display` "718" + `caption` "DÍAS JUNTOS". Tocarlo alterna: días / desde el 16/11/2024 / desde el 25/5/2025. |
+| **DayCounter** | Anillo SVG circular (radio 88px, trazo 5px en `--accent`, fondo `--paper-2`) con progreso hacia el próximo hito (0..1). Centro: número grande Fraunces con animación count-up ease-out cúbico (900ms) + caption "DÍAS JUNTOS" o "DÍAS DESDE QUE NOS CONOCIMOS". Debajo del anillo: pill con el texto del próximo hito ("600 días de novios · en 47 días"); si es hoy → pill en `bg-accent-soft` con "✨ [label]". Props recibidas del servidor: `days`, `label`, `milestones: MilestoneResult`. Respeta `prefers-reduced-motion` (sin count-up, sin transición de anillo). |
 | **ScoreBoard** | Dos columnas (Facu / Kiki) con su color, número `score`, avatar arriba. Línea "Historial: 12 – 15". |
 | **MatchstickColumn** (truco) | Fosforitos dibujados en SVG, en cuadrados de 5 (4 lados + diagonal). Línea divisoria en 15 con etiquetas "malas" / "buenas". Tocar la columna suma 1. |
 | **RoundInput** (chinchón/scrabble) | Teclado numérico grande para cargar la mano o el turno; botones especiales ("Cortó −10", "¡Chinchón!", "Palabra"). |
@@ -205,12 +205,12 @@ Marcadas con **[E1]** (Etapa 1 · Lite) o **[E2]** (Etapa 2 · MVP completo).
 ### 8.3 Inicio [E1, se enriquece en E2]
 De arriba hacia abajo:
 1. Header: wordmark "Ki<i" chico + avatar (→ Ajustes).
-2. **DayCounter**.
+2. **DayCounter** — servidor calcula `todayInBA()` + `computeMilestones()` + `diffDays(baseDate, today)` y pasa los props. Anillo SVG con progreso al próximo hito, número animado, pill de próximo hito (o "✨ hoy" si es un día especial).
 3. [E2] **Sobres nuevos** (si hay) y **ThoughtToast**.
 4. [E2] Botón grande "💭 Pensé en vos".
 5. [v1] "Hace un año hoy" (tarjeta con foto).
 6. **Último recuerdo** (MemoryCard).
-7. Accesos rápidos en fila: "Tirar pregunta", "Seguir partida" (si hay una abierta), "Discreción".
+7. **Accesos rápidos** (cards): "🎲 Tirar pregunta" siempre; "🎮 Seguir partida" solo si hay una `in_progress`; "🌶️ Discreción" siempre.
 
 ### 8.4 Sheet "+" [E1]
 Ver sección 6.

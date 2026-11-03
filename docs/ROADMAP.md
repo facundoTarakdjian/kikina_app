@@ -76,7 +76,7 @@
 
 | ID | Tarea | Criterio de terminado | ⏱ |
 |---|---|---|---|
-| ☐ L-05 | Inicio: contador de días (alterna 16/11/2024 ↔ 25/5/2025), accesos rápidos, "Seguir partida" si hay una abierta, último recuerdo. | Se ve como el mockup de DESIGN §8.3. | 30' |
+| ☑ L-05 | Inicio: contador de días (alterna 16/11/2024 ↔ 25/5/2025), accesos rápidos, "Seguir partida" si hay una abierta, último recuerdo. | Se ve como el mockup de DESIGN §8.3. | 30' |
 | ☐ L-10 | Detalle de recuerdo: carrusel, puntajes de los dos, "Poner mi puntaje", editar, borrar lógico (con confirmación). | Cada uno edita solo su puntaje; borrar lo saca del feed. | 30' |
 | ☑ L-12 | Scorer **chinchón** + tests: mano por mano, "−10" como atajo, "¡Chinchón!" gana directo, pierde quien pasa 101. | Tests: 101 exacto sigue, 102 pierde, chinchón gana, −10 y 3 en la misma mano. | 30' |
 | ☑ L-16 | UI anotador **chinchón**: tabla aireada de manos, BottomSheet con NumberPad, botones especiales, aviso cerca de 101. | Partida completa jugada en el celu. | 30' |
