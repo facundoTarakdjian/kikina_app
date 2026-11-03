@@ -7,6 +7,8 @@ import { chinchonScorer } from "@/src/lib/scorers/chinchon";
 import type { ChinchonState } from "@/src/lib/scorers/chinchon";
 import { scrabbleScorer } from "@/src/lib/scorers/scrabble";
 import type { ScrabbleState } from "@/src/lib/scorers/scrabble";
+import { winnerOnlyScorer } from "@/src/lib/scorers/winner-only";
+import type { WinnerOnlyState } from "@/src/lib/scorers/winner-only";
 import type { Scorer } from "@/src/lib/scorers/types";
 
 interface Profile {
@@ -85,15 +87,6 @@ async function fetchGameData<S>(
   return { winsA, winsB, inProgress };
 }
 
-interface OtherGame {
-  emoji: string;
-  name: string;
-  description: string;
-}
-
-const OTHER_GAMES: OtherGame[] = [
-  { emoji: "🕵️", name: "Código Secreto", description: "Solo el ganador" },
-];
 
 export default async function JuegosPage() {
   const supabase = await createClient();
@@ -126,10 +119,11 @@ export default async function JuegosPage() {
     },
   ];
 
-  const [truco, chinchon, scrabble] = await Promise.all([
+  const [truco, chinchon, scrabble, codigoSecreto] = await Promise.all([
     fetchGameData(supabase, "truco", trucoScorer as Scorer<TrucoState, never>, coupleId, players),
     fetchGameData(supabase, "chinchon", chinchonScorer as Scorer<ChinchonState, never>, coupleId, players),
     fetchGameData(supabase, "scrabble", scrabbleScorer as Scorer<ScrabbleState, never>, coupleId, players),
+    fetchGameData(supabase, "codigo-secreto", winnerOnlyScorer as Scorer<WinnerOnlyState, never>, coupleId, players),
   ]);
   const [pA, pB] = players;
 
@@ -237,20 +231,33 @@ export default async function JuegosPage() {
           )}
         </div>
 
-        {/* Otros juegos — deshabilitados */}
-        {OTHER_GAMES.map(({ emoji, name, description }) => (
-          <div
-            key={name}
-            className="flex items-center gap-4 px-4 py-4 rounded-card bg-card shadow-1 min-h-[72px] opacity-40"
-            aria-disabled="true"
+        {/* Código Secreto */}
+        <div className="rounded-card bg-card shadow-1 overflow-hidden">
+          <Link
+            href="/juegos/codigo-secreto/jugar"
+            className="flex items-center gap-4 px-4 py-4 min-h-[72px] active:bg-paper-2 transition-colors"
           >
-            <span className="text-2xl leading-none" aria-hidden="true">{emoji}</span>
-            <div className="flex flex-col gap-0.5">
-              <span className="text-h3 text-ink">{name}</span>
-              <span className="text-small text-ink-2">{description}</span>
+            <span className="text-2xl leading-none" aria-hidden="true">🕵️</span>
+            <div className="flex flex-col gap-0.5 flex-1">
+              <span className="text-h3 text-ink">Código Secreto</span>
+              <span className="text-small text-ink-2">
+                <span style={{ color: pA.color }}>{pA.display_name} {codigoSecreto.winsA}</span>
+                <span className="mx-1 text-ink-2">–</span>
+                <span style={{ color: pB.color }}>{codigoSecreto.winsB} {pB.display_name}</span>
+              </span>
             </div>
-          </div>
-        ))}
+            <ChevronRight size={18} className="text-ink-2 shrink-0" />
+          </Link>
+          {codigoSecreto.inProgress && (
+            <Link
+              href="/juegos/codigo-secreto/jugar"
+              className="flex items-center justify-between px-4 py-3 border-t border-line bg-accent-soft active:bg-paper-2 transition-colors"
+            >
+              <span className="text-small text-ink">Código Secreto en curso</span>
+              <span className="text-small text-accent font-medium">Seguir →</span>
+            </Link>
+          )}
+        </div>
       </div>
     </main>
   );
