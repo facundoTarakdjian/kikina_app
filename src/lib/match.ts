@@ -22,6 +22,7 @@ interface MatchInternalState<S> {
   phase: MatchPhase;
   matchId: string | null;
   gameState: S | null;
+  saveFailed: boolean; // true si el guardado final falló (LS intacto para reintentar)
 }
 
 // _E no se usa directamente en acciones pero mantiene la firma genérica
@@ -32,7 +33,9 @@ type MatchAction<S, _E> =
   | { type: "STARTED"; matchId: string; gameState: S }
   | { type: "DISPATCHED"; gameState: S }
   | { type: "FINISHED"; gameState: S }
-  | { type: "ABANDONED" };
+  | { type: "ABANDONED" }
+  | { type: "SAVE_FAILED" }
+  | { type: "SAVE_SUCCEEDED" };
 
 function matchReducer<S, E>(
   state: MatchInternalState<S>,
@@ -40,17 +43,21 @@ function matchReducer<S, E>(
 ): MatchInternalState<S> {
   switch (action.type) {
     case "LOADED_PENDING":
-      return { phase: "offer_resume", matchId: action.matchId, gameState: action.gameState };
+      return { phase: "offer_resume", matchId: action.matchId, gameState: action.gameState, saveFailed: false };
     case "LOADED_NONE":
-      return { phase: "idle", matchId: null, gameState: null };
+      return { phase: "idle", matchId: null, gameState: null, saveFailed: false };
     case "STARTED":
-      return { phase: "playing", matchId: action.matchId, gameState: action.gameState };
+      return { phase: "playing", matchId: action.matchId, gameState: action.gameState, saveFailed: false };
     case "DISPATCHED":
       return { ...state, gameState: action.gameState };
     case "FINISHED":
-      return { phase: "finished", matchId: state.matchId, gameState: action.gameState };
+      return { phase: "finished", matchId: state.matchId, gameState: action.gameState, saveFailed: false };
     case "ABANDONED":
-      return { phase: "idle", matchId: null, gameState: null };
+      return { phase: "idle", matchId: null, gameState: null, saveFailed: false };
+    case "SAVE_FAILED":
+      return { ...state, saveFailed: true };
+    case "SAVE_SUCCEEDED":
+      return { ...state, saveFailed: false };
     default:
       return state;
   }
@@ -61,11 +68,20 @@ export interface UseMatchStateReturn<S, E> {
   gameState: S | null;
   result: ScorerResult | null;
   matchId: string | null;
+  saveFailed: boolean;
   dispatch: (event: E) => void;
   undo: () => void;
   startNew: () => Promise<void>;
   resume: () => void;
   abandon: () => Promise<void>;
+  retryFinish: () => Promise<void>;
+}
+
+// Datos del resultado pendiente de guardar (para reintentar si falla)
+interface PendingFinish<S> {
+  matchId: string;
+  newGameState: S;
+  result: ScorerResult;
 }
 
 export function useMatchState<S, E>(opts: {
@@ -83,10 +99,11 @@ export function useMatchState<S, E>(opts: {
 
   const [internalState, dispatch] = useReducer(
     matchReducer<S, E>,
-    { phase: "loading", matchId: null, gameState: null },
+    { phase: "loading", matchId: null, gameState: null, saveFailed: false },
   );
 
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pendingFinishRef = useRef<PendingFinish<S> | null>(null);
 
   // --- Persistencia ---
 
@@ -271,6 +288,38 @@ export function useMatchState<S, E>(opts: {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [internalState.matchId]);
 
+  async function saveFinishToDB(pending: PendingFinish<S>): Promise<boolean> {
+    const supabase = createClient();
+
+    const { error: matchError } = await supabase
+      .from("matches")
+      .update({
+        status: "finished",
+        winner_id: pending.result.winner,
+        finished_at: new Date().toISOString(),
+        state: pending.newGameState as never,
+      })
+      .eq("id", pending.matchId);
+
+    if (matchError) return false;
+
+    const scoreRows = players.map((p) => ({
+      match_id: pending.matchId,
+      couple_id: coupleId,
+      user_id: p,
+      score: pending.result.scores[p] ?? 0,
+      extra: (pending.result.extra?.[p] ?? {}) as never,
+    }));
+
+    const { error: scoresError } = await supabase
+      .from("match_scores")
+      .insert(scoreRows);
+
+    if (scoresError) return false;
+
+    return true;
+  }
+
   const dispatchEvent = useCallback((event: E) => {
     if (!internalState.gameState || !internalState.matchId) return;
 
@@ -282,35 +331,45 @@ export function useMatchState<S, E>(opts: {
 
     if (result.finished) {
       if (debounceRef.current) clearTimeout(debounceRef.current);
-      const matchId = internalState.matchId;
-      void (async () => {
-        const supabase = createClient();
-        await supabase
-          .from("matches")
-          .update({
-            status: "finished",
-            winner_id: result.winner,
-            finished_at: new Date().toISOString(),
-            state: newGameState as never,
-          })
-          .eq("id", matchId);
+      const pending: PendingFinish<S> = {
+        matchId: internalState.matchId,
+        newGameState,
+        result,
+      };
+      pendingFinishRef.current = pending;
 
-        const scoreRows = players.map((p) => ({
-          match_id: matchId,
-          couple_id: coupleId,
-          user_id: p,
-          score: result.scores[p] ?? 0,
-          extra: (result.extra?.[p] ?? {}) as never,
-        }));
-        await supabase.from("match_scores").insert(scoreRows);
-        clearLocalStorage();
+      void (async () => {
+        const ok = await saveFinishToDB(pending);
+        if (ok) {
+          clearLocalStorage();
+          pendingFinishRef.current = null;
+          // saveFailed stays false (never changed from initial FINISHED)
+        } else {
+          // LS queda intacto para permitir reintentar
+          dispatch({ type: "SAVE_FAILED" });
+        }
       })();
+
       dispatch({ type: "FINISHED", gameState: newGameState });
     } else {
       dispatch({ type: "DISPATCHED", gameState: newGameState });
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [internalState, scorer, players, coupleId]);
+
+  const retryFinish = useCallback(async () => {
+    const pending = pendingFinishRef.current;
+    if (!pending) return;
+
+    const ok = await saveFinishToDB(pending);
+    if (ok) {
+      clearLocalStorage();
+      pendingFinishRef.current = null;
+      dispatch({ type: "SAVE_SUCCEEDED" });
+    }
+    // Si sigue fallando, saveFailed permanece true — el usuario puede volver a intentar
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [players, coupleId]);
 
   const undo = useCallback(() => {
     if (!internalState.gameState || !internalState.matchId) return;
@@ -330,10 +389,12 @@ export function useMatchState<S, E>(opts: {
     gameState: internalState.gameState,
     result,
     matchId: internalState.matchId,
+    saveFailed: internalState.saveFailed,
     dispatch: dispatchEvent,
     undo,
     startNew,
     resume,
     abandon,
+    retryFinish,
   };
 }

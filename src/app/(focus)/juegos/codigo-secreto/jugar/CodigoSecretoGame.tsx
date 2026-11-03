@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useMatchState } from "@/src/lib/match";
 import { winnerOnlyScorer } from "@/src/lib/scorers/winner-only";
@@ -41,6 +41,14 @@ export function CodigoSecretoGame({
     storageKey: "codigo-secreto",
   });
 
+  // Auto-start: este juego no tiene pantalla idle — crear la partida al entrar
+  useEffect(() => {
+    if (match.phase === "idle") {
+      void match.startNew();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [match.phase]);
+
   // Confirmación: qué jugador está pendiente de confirmar
   const [pending, setPending] = useState<Player | null>(null);
 
@@ -63,7 +71,7 @@ export function CodigoSecretoGame({
 
   // ── FASES ──
 
-  if (match.phase === "loading") return <MatchLoadingScreen />;
+  if (match.phase === "loading" || match.phase === "idle") return <MatchLoadingScreen />;
 
   if (match.phase === "offer_resume") {
     return (
@@ -82,17 +90,30 @@ export function CodigoSecretoGame({
       ? players.find((p) => p.id === match.result!.winner) ?? null
       : null;
     return (
-      <MatchWinnerScreen
-        players={players}
-        winner={winner}
-        scores={scores}
-        onRevancha={() => void match.startNew()}
-        onDone={() => router.push("/juegos")}
-      />
+      <div className="relative">
+        <MatchWinnerScreen
+          players={players}
+          winner={winner}
+          scores={scores}
+          onRevancha={() => void match.startNew()}
+          onDone={() => router.push("/juegos")}
+        />
+        {match.saveFailed && (
+          <div className="fixed bottom-safe-bottom bottom-4 left-4 right-4 z-50 flex items-center justify-between gap-3 px-4 py-3 rounded-xl bg-paper-2 shadow-1 border border-line">
+            <span className="text-small text-ink">No se pudo guardar. Reintentá cuando haya conexión.</span>
+            <button
+              onClick={() => void match.retryFinish()}
+              className="text-small text-accent font-medium shrink-0"
+            >
+              Reintentar
+            </button>
+          </div>
+        )}
+      </div>
     );
   }
 
-  // ── EN CURSO (idle o playing — para este juego son la misma cosa) ──
+  // ── EN CURSO (playing) ──
 
   return (
     <div
