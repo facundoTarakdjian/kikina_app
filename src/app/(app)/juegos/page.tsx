@@ -3,6 +3,9 @@ import { ChevronRight } from "lucide-react";
 import { createClient } from "@/src/lib/supabase/server";
 import { trucoScorer } from "@/src/lib/scorers/truco";
 import type { TrucoState } from "@/src/lib/scorers/truco";
+import { chinchonScorer } from "@/src/lib/scorers/chinchon";
+import type { ChinchonState } from "@/src/lib/scorers/chinchon";
+import type { Scorer } from "@/src/lib/scorers/types";
 
 interface Profile {
   id: string;
@@ -10,7 +13,7 @@ interface Profile {
   color: string;
 }
 
-interface TrucoGameData {
+interface GameData {
   winsA: number;
   winsB: number;
   inProgress: {
@@ -20,16 +23,17 @@ interface TrucoGameData {
   } | null;
 }
 
-async function fetchTrucoData(
+async function fetchGameData<S>(
   supabase: Awaited<ReturnType<typeof createClient>>,
+  slug: string,
+  scorer: Scorer<S, never>,
   coupleId: string,
   players: [Profile, Profile],
-): Promise<TrucoGameData> {
-  // Fetch truco game_id
+): Promise<GameData> {
   const { data: game } = await supabase
     .from("games")
     .select("id")
-    .eq("slug", "truco")
+    .eq("slug", slug)
     .eq("couple_id", coupleId)
     .maybeSingle();
 
@@ -53,7 +57,6 @@ async function fetchTrucoData(
       .maybeSingle(),
   ]);
 
-  // Contar victorias
   const [pA, pB] = players;
   let winsA = 0;
   let winsB = 0;
@@ -62,19 +65,19 @@ async function fetchTrucoData(
     else if (m.winner_id === pB.id) winsB++;
   }
 
-  // Partida en curso
-  let inProgress: TrucoGameData["inProgress"] = null;
-  if (ipRes.data) {
-    const raw = ipRes.data.state;
-    let scoreA = 0;
-    let scoreB = 0;
-    if (raw && typeof raw === "object" && "events" in raw) {
-      const state = raw as unknown as TrucoState;
-      const res = trucoScorer.result(state);
-      scoreA = res.scores[pA.id] ?? 0;
-      scoreB = res.scores[pB.id] ?? 0;
+  let inProgress: GameData["inProgress"] = null;
+  if (ipRes.data?.state) {
+    try {
+      const state = ipRes.data.state as unknown as S;
+      const res = scorer.result(state);
+      inProgress = {
+        matchId: ipRes.data.id,
+        scoreA: res.scores[pA.id] ?? 0,
+        scoreB: res.scores[pB.id] ?? 0,
+      };
+    } catch {
+      // state malformed, ignore
     }
-    inProgress = { matchId: ipRes.data.id, scoreA, scoreB };
   }
 
   return { winsA, winsB, inProgress };
@@ -87,7 +90,6 @@ interface OtherGame {
 }
 
 const OTHER_GAMES: OtherGame[] = [
-  { emoji: "🂡", name: "Chinchón", description: "Hasta 101" },
   { emoji: "📝", name: "Scrabble", description: "Acumulado" },
   { emoji: "🕵️", name: "Código Secreto", description: "Solo el ganador" },
 ];
@@ -100,7 +102,6 @@ export default async function JuegosPage() {
     .select("id, display_name, color, couple_id")
     .limit(2);
 
-  // Sin datos suficientes: página mínima
   if (!profileRows || profileRows.length < 2) {
     return (
       <main className="min-h-full bg-paper px-4 pt-6 pb-4">
@@ -124,7 +125,10 @@ export default async function JuegosPage() {
     },
   ];
 
-  const truco = await fetchTrucoData(supabase, coupleId, players);
+  const [truco, chinchon] = await Promise.all([
+    fetchGameData(supabase, "truco", trucoScorer as Scorer<TrucoState, never>, coupleId, players),
+    fetchGameData(supabase, "chinchon", chinchonScorer as Scorer<ChinchonState, never>, coupleId, players),
+  ]);
   const [pA, pB] = players;
 
   return (
@@ -132,7 +136,7 @@ export default async function JuegosPage() {
       <h1 className="text-h1 text-ink mb-6 px-1">Juegos</h1>
 
       <div className="flex flex-col gap-3">
-        {/* Truco — habilitado */}
+        {/* Truco */}
         <div className="rounded-card bg-card shadow-1 overflow-hidden">
           <Link
             href="/juegos/truco/jugar"
@@ -141,7 +145,6 @@ export default async function JuegosPage() {
             <span className="text-2xl leading-none" aria-hidden="true">🃏</span>
             <div className="flex flex-col gap-0.5 flex-1">
               <span className="text-h3 text-ink">Truco</span>
-              {/* Marcador histórico */}
               <span className="text-small text-ink-2">
                 <span style={{ color: pA.color }}>{pA.display_name} {truco.winsA}</span>
                 <span className="mx-1 text-ink-2">–</span>
@@ -150,8 +153,6 @@ export default async function JuegosPage() {
             </div>
             <ChevronRight size={18} className="text-ink-2 shrink-0" />
           </Link>
-
-          {/* Banda "en curso" */}
           {truco.inProgress && (
             <Link
               href="/juegos/truco/jugar"
@@ -162,6 +163,39 @@ export default async function JuegosPage() {
                 <span style={{ color: pA.color }}>{truco.inProgress.scoreA}</span>
                 <span className="text-ink-2 mx-1">a</span>
                 <span style={{ color: pB.color }}>{truco.inProgress.scoreB}</span>
+              </span>
+              <span className="text-small text-accent font-medium">Seguir →</span>
+            </Link>
+          )}
+        </div>
+
+        {/* Chinchón — habilitado */}
+        <div className="rounded-card bg-card shadow-1 overflow-hidden">
+          <Link
+            href="/juegos/chinchon/jugar"
+            className="flex items-center gap-4 px-4 py-4 min-h-[72px] active:bg-paper-2 transition-colors"
+          >
+            <span className="text-2xl leading-none" aria-hidden="true">🂡</span>
+            <div className="flex flex-col gap-0.5 flex-1">
+              <span className="text-h3 text-ink">Chinchón</span>
+              <span className="text-small text-ink-2">
+                <span style={{ color: pA.color }}>{pA.display_name} {chinchon.winsA}</span>
+                <span className="mx-1 text-ink-2">–</span>
+                <span style={{ color: pB.color }}>{chinchon.winsB} {pB.display_name}</span>
+              </span>
+            </div>
+            <ChevronRight size={18} className="text-ink-2 shrink-0" />
+          </Link>
+          {chinchon.inProgress && (
+            <Link
+              href="/juegos/chinchon/jugar"
+              className="flex items-center justify-between px-4 py-3 border-t border-line bg-accent-soft active:bg-paper-2 transition-colors"
+            >
+              <span className="text-small text-ink">
+                Chinchón en curso ·{" "}
+                <span style={{ color: pA.color }}>{chinchon.inProgress.scoreA}</span>
+                <span className="text-ink-2 mx-1">a</span>
+                <span style={{ color: pB.color }}>{chinchon.inProgress.scoreB}</span>
               </span>
               <span className="text-small text-accent font-medium">Seguir →</span>
             </Link>

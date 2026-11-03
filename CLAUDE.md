@@ -72,7 +72,7 @@ supabase/migrations · supabase/seed-data · scripts/
 - **Tests obligatorios** por scorer en `__tests__/` (victoria, límites, deshacer, casos especiales).
 - Reglas de la casa (no cambiar sin preguntar):
   - **Truco:** a 30, sin flor, malas/buenas en 15, se suma tocando (+1).
-  - **Chinchón:** se cargan los puntos de la mano; cortar = −10 al que cortó; chinchón = gana directo; pierde quien **supera** 101; sin reenganche.
+  - **Chinchón:** se cargan los puntos de la mano de cada uno (el que corta sin cartas sueltas hace −10, pero es solo un número que se carga); chinchón = gana directo; pierde quien **supera** 101 (101 exacto sigue); sin reenganche.
   - **Código Secreto:** solo se registra el ganador.
   - **Auto amarillo:** contador eterno en `counter_events` (no usa `matches`).
 - La partida en curso se persiste en cada evento (localStorage inmediato + upsert con debounce de 800 ms) y se retoma al volver.

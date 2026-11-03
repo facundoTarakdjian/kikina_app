@@ -612,7 +612,7 @@ create policy media_delete on storage.objects for delete to authenticated
 |---|---|---|---|---|
 | `scrabble` | Scrabble | 🔤 | `scrabble` | `{}` |
 | `truco` | Truco | 🃏 | `truco` | `{"target":30,"flor":false}` |
-| `chinchon` | Chinchón | 🂡 | `chinchon` | `{"limit":101,"cut_bonus":-10,"reenganche":false}` |
+| `chinchon` | Chinchón | 🂡 | `chinchon` | `{"limit":101,"reenganche":false}` |
 | `codigo-secreto` | Código Secreto | 🕵️ | `winner_only` | `{}` |
 | `auto-amarillo` | Auto amarillo | 🚕 | `counter` | `{}` |
 
@@ -637,7 +637,7 @@ export interface Scorer<S, E> {
 | Scorer | Eventos | Fin |
 |---|---|---|
 | `truco` | `{t:'point', player, n=1}` | Primero en `target` (30). UI: fosforitos en grupos de 5; separador de "malas/buenas" en 15. |
-| `chinchon` | `{t:'hand', scores:{a:n,b:n}, cut?:player}`, `{t:'chinchon', player}` | Pierde quien supera `limit` (101); `chinchon` gana directo. `cut` suma `cut_bonus` (−10) al que cortó. |
+| `chinchon` | `{t:'hand', scores:Record<PlayerId,number>}`, `{t:'chinchon', player}` | Pierde quien supera `limit` (101); 101 exacto no termina. Si los dos se pasan en la misma mano, pierde el de mayor total; empate si quedan igual. `chinchon` gana directo. Los puntos de cada mano (incluidos negativos) se guardan tal cual. |
 | `scrabble` | `{t:'turn', player, points, word?}`, `{t:'end'}` | Al tocar "Terminar"; gana el mayor total. `extra`: mejor palabra y mejor turno. |
 | `winner_only` | `{t:'win', player}` | Inmediato. |
 | `rounds` | `{t:'round', scores}` | Según `config.win` (`highest`/`lowest`) y `config.target`. |
@@ -645,7 +645,7 @@ export interface Scorer<S, E> {
 
 **Persistencia de partida en vivo:** cada `apply` → guarda en `localStorage` (inmediato) y hace `upsert` de `matches.state` con debounce de 800 ms. Al abrir el juego, si hay un `match` `in_progress`, se ofrece retomarlo. Al terminar: `status='finished'`, `winner_id`, `finished_at` y filas en `match_scores`.
 
-**Tests obligatorios** (`vitest`): cada scorer con casos de victoria, empate (si aplica), deshacer y límites (truco 29→30, chinchón 101 exacto vs 102, chinchón directo, −10).
+**Tests obligatorios** (`vitest`): cada scorer con casos de victoria, empate (si aplica), deshacer y límites (truco 29→30, chinchón 101 exacto vs 102, chinchón directo, se puede cargar −10 y también cargar 3 puntos en la misma mano en que el otro hace −10).
 
 ---
 

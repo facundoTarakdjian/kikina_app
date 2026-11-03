@@ -153,7 +153,7 @@ Lo que se necesita para empezar a usarla ya. Ver `ROADMAP.md` para el orden (Hit
 - [ ] Reglas por juego:
   - **Scrabble:** turnos alternados; se cargan puntos por turno y, opcionalmente, la palabra. Gana el de mayor total al cerrar la partida.
   - **Truco:** a 30, sin flor. Dos columnas con fosforitos (grupos de 5, "malas" hasta 15 y "buenas" de 16 a 30). Tocar la columna suma 1; gana el primero en 30.
-  - **Chinchón:** se carga cuántos puntos hizo cada uno en la mano; botón "cortó en −10" (resta 10 al que cortó) y botón "¡Chinchón!" (gana la partida directo). Pierde quien supera 101. Sin reenganche.
+  - **Chinchón:** se cargan los puntos de la mano de cada uno (incluidos negativos). "−10" es un atajo de teclado que pre-carga −10 en el casillero del jugador activo (se puede pisar). "¡Chinchón!" gana la partida directo (pide confirmación). Pierde quien supera 101 (101 exacto sigue); si los dos se pasan en la misma mano, pierde el que quedó más arriba; empate si quedan igual. Sin reenganche.
   - **Código Secreto:** solo se elige quién ganó.
   - **Auto amarillo:** contador eterno por persona; un toque suma 1, mantener presionado permite anular el último punto.
 
