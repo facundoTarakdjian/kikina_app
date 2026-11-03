@@ -70,7 +70,7 @@
 | ☑ L-14 | Infra de partida: crear `match`, guardar estado (localStorage inmediato + upsert con debounce), retomar partida en curso, terminar → `winner_id` + `match_scores`. | Cerrar la app a mitad de partida y volver la retoma igual. | 45' |
 | ☑ L-15 | UI anotador **truco**: dos columnas de fosforitos (SVG, cuadrados de 5, línea en 15), tocar = +1, UndoBar, pantalla de ganador con "Revancha". | Se juega una partida entera en el celu y queda en el historial. | 45' |
 | ☑ L-20 | Preguntas: dado con animación, filtro por categoría, sin repetir (`question_draws`), "Otra". | Tirar 10 veces no repite; el filtro funciona. | 30' |
-| ☐ A-✔ | **Prueba real del Hito A** en los dos celulares + arreglos. | Una salida real cargada y un truco real anotado. | 30' |
+| ☑ A-✔ | **Prueba real del Hito A** en los dos celulares + arreglos. | Una salida real cargada y un truco real anotado. | 30' |
 
 ### 🅱️ Hito B — Lite completa (~7 h)
 
