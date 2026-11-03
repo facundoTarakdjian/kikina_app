@@ -5,6 +5,8 @@ import { trucoScorer } from "@/src/lib/scorers/truco";
 import type { TrucoState } from "@/src/lib/scorers/truco";
 import { chinchonScorer } from "@/src/lib/scorers/chinchon";
 import type { ChinchonState } from "@/src/lib/scorers/chinchon";
+import { scrabbleScorer } from "@/src/lib/scorers/scrabble";
+import type { ScrabbleState } from "@/src/lib/scorers/scrabble";
 import type { Scorer } from "@/src/lib/scorers/types";
 
 interface Profile {
@@ -90,7 +92,6 @@ interface OtherGame {
 }
 
 const OTHER_GAMES: OtherGame[] = [
-  { emoji: "📝", name: "Scrabble", description: "Acumulado" },
   { emoji: "🕵️", name: "Código Secreto", description: "Solo el ganador" },
 ];
 
@@ -125,9 +126,10 @@ export default async function JuegosPage() {
     },
   ];
 
-  const [truco, chinchon] = await Promise.all([
+  const [truco, chinchon, scrabble] = await Promise.all([
     fetchGameData(supabase, "truco", trucoScorer as Scorer<TrucoState, never>, coupleId, players),
     fetchGameData(supabase, "chinchon", chinchonScorer as Scorer<ChinchonState, never>, coupleId, players),
+    fetchGameData(supabase, "scrabble", scrabbleScorer as Scorer<ScrabbleState, never>, coupleId, players),
   ]);
   const [pA, pB] = players;
 
@@ -196,6 +198,39 @@ export default async function JuegosPage() {
                 <span style={{ color: pA.color }}>{chinchon.inProgress.scoreA}</span>
                 <span className="text-ink-2 mx-1">a</span>
                 <span style={{ color: pB.color }}>{chinchon.inProgress.scoreB}</span>
+              </span>
+              <span className="text-small text-accent font-medium">Seguir →</span>
+            </Link>
+          )}
+        </div>
+
+        {/* Scrabble — habilitado */}
+        <div className="rounded-card bg-card shadow-1 overflow-hidden">
+          <Link
+            href="/juegos/scrabble/jugar"
+            className="flex items-center gap-4 px-4 py-4 min-h-[72px] active:bg-paper-2 transition-colors"
+          >
+            <span className="text-2xl leading-none" aria-hidden="true">🔤</span>
+            <div className="flex flex-col gap-0.5 flex-1">
+              <span className="text-h3 text-ink">Scrabble</span>
+              <span className="text-small text-ink-2">
+                <span style={{ color: pA.color }}>{pA.display_name} {scrabble.winsA}</span>
+                <span className="mx-1 text-ink-2">–</span>
+                <span style={{ color: pB.color }}>{scrabble.winsB} {pB.display_name}</span>
+              </span>
+            </div>
+            <ChevronRight size={18} className="text-ink-2 shrink-0" />
+          </Link>
+          {scrabble.inProgress && (
+            <Link
+              href="/juegos/scrabble/jugar"
+              className="flex items-center justify-between px-4 py-3 border-t border-line bg-accent-soft active:bg-paper-2 transition-colors"
+            >
+              <span className="text-small text-ink">
+                Scrabble en curso ·{" "}
+                <span style={{ color: pA.color }}>{scrabble.inProgress.scoreA}</span>
+                <span className="text-ink-2 mx-1">a</span>
+                <span style={{ color: pB.color }}>{scrabble.inProgress.scoreB}</span>
               </span>
               <span className="text-small text-accent font-medium">Seguir →</span>
             </Link>

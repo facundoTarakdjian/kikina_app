@@ -300,7 +300,7 @@ export function useMatchState<S, E>(opts: {
           couple_id: coupleId,
           user_id: p,
           score: result.scores[p] ?? 0,
-          extra: {},
+          extra: (result.extra?.[p] ?? {}) as never,
         }));
         await supabase.from("match_scores").insert(scoreRows);
         clearLocalStorage();

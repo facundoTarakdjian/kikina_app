@@ -80,8 +80,8 @@
 | ☐ L-10 | Detalle de recuerdo: carrusel, puntajes de los dos, "Poner mi puntaje", editar, borrar lógico (con confirmación). | Cada uno edita solo su puntaje; borrar lo saca del feed. | 30' |
 | ☑ L-12 | Scorer **chinchón** + tests: mano por mano, "−10" como atajo, "¡Chinchón!" gana directo, pierde quien pasa 101. | Tests: 101 exacto sigue, 102 pierde, chinchón gana, −10 y 3 en la misma mano. | 30' |
 | ☑ L-16 | UI anotador **chinchón**: tabla aireada de manos, BottomSheet con NumberPad, botones especiales, aviso cerca de 101. | Partida completa jugada en el celu. | 30' |
-| ☐ L-13 | Scorers **scrabble** (turnos, palabra opcional, terminar) y **winner_only** + tests. | Tests de total, mejor palabra y ganador. | 30' |
-| ☐ L-17 | UI anotador **scrabble** + **Código Secreto** (dos botones gigantes). | Ambos guardan en el historial. | 30' |
+| ☑ L-13 | Scorer **scrabble** (turnos, palabra opcional, terminar, alternancia, extra best_word/best_turn) + tests. | Tests de total, mejor palabra y ganador. `winner_only` queda pendiente con Código Secreto. | 30' |
+| ☑ L-17 | UI anotador **scrabble** (turnos alternados, sheet con NumberPad+WordInput, Terminar doble toque). **Código Secreto** queda pendiente. | Guarda en el historial. | 30' |
 | ☐ L-18 | **Auto amarillo**: `counter_events`, botones +1 en la tarjeta del juego, mantener apretado = anular último, total eterno. | Sumar y anular funcionan; total correcto en los dos celulares. | 20' |
 | ☐ L-19 | Pantalla **Juegos** (tarjetas con marcador total "Facu 12 – Kiki 15", partida en curso) + **detalle de juego** con historial. | Marcadores coinciden con el historial. | 45' |
 | ☐ L-21 | **Discreción** base: layout siempre oscuro, LevelPicker (4 niveles), home con modos. | Entrar a Discreción cambia todo a oscuro, sin importar el modo del celu. | 20' |
