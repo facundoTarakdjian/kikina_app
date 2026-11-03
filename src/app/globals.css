@@ -61,17 +61,30 @@
 }
 
 /* ═══════════════════════════════════════════════════════════════════
+   TOKENS — Discreción standalone (fijos, independientes del sistema)
+   Disponibles en toda la app como bg-d-surface, text-d-ink, etc.
+   ═══════════════════════════════════════════════════════════════════ */
+:root {
+  --d-bg:      #120A0B;
+  --d-surface: #1E1012;
+  --d-line:    #3A1E22;
+  --d-ink:     #F3E6E3;
+  --d-ink-2:   #B9A7A3;
+  --d-accent:  #B3243A;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
    TOKENS — Discreción (siempre oscuro, independiente del sistema)
    ═══════════════════════════════════════════════════════════════════ */
 [data-theme="discrecion"] {
   /* Tokens estándar remapeados → se usan con bg-paper, text-ink, etc. */
-  --paper:        #120A0B;
-  --paper-2:      #1E1012;
-  --card:         #1E1012;
-  --line:         #3A1E22;
-  --ink:          #F3E6E3;
-  --ink-2:        #B9A7A3;
-  --accent:       #B3243A;
+  --paper:        var(--d-bg);
+  --paper-2:      var(--d-surface);
+  --card:         var(--d-surface);
+  --line:         var(--d-line);
+  --ink:          var(--d-ink);
+  --ink-2:        var(--d-ink-2);
+  --accent:       var(--d-accent);
   --accent-deco:  #E8475F;
   --accent-soft:  #2A1015;
   --shadow-1:     0 1px 4px rgb(0 0 0 / .5), 0 4px 20px rgb(0 0 0 / .4);
@@ -106,6 +119,12 @@
   --color-ok:           var(--ok);
   --color-danger:       var(--danger);
   --color-surface:      var(--paper-2);
+  --color-d-bg:         var(--d-bg);
+  --color-d-surface:    var(--d-surface);
+  --color-d-line:       var(--d-line);
+  --color-d-ink:        var(--d-ink);
+  --color-d-ink-2:      var(--d-ink-2);
+  --color-d-accent:     var(--d-accent);
   --color-d-glow:       var(--d-glow, #E8475F);
   --color-d-level-1:    var(--d-level-1, #E8A0A0);
   --color-d-level-2:    var(--d-level-2, #E46A5E);

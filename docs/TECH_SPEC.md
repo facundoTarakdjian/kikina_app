@@ -343,6 +343,12 @@ create table public.question_draws (
   drawn_at     timestamptz not null default now()
 );
 create index question_draws_idx on public.question_draws (couple_id, question_id);
+-- Lógica de deduplicación: antes de sortear, se excluyen las question_id que ya
+-- tienen una fila para este couple_id. Cuando se agotan las preguntas del filtro
+-- activo, la UI ofrece "reiniciar": borra los draws cuyo question_id esté en el
+-- pool del filtro activo (DELETE WHERE question_id IN (...) AND couple_id = ...).
+-- Esto permite repetir solo las categorías elegidas sin tocar el historial del
+-- resto. No se guardan respuestas; question_draws es solo para deduplicación.
 
 -- ---------- Discreción ----------
 create table public.discretion_dice_faces (

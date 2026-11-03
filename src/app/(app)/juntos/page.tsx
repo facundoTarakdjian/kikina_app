@@ -22,13 +22,13 @@ export default function JuntosPage() {
 
         {/* Discreción — deshabilitada hasta L-21 */}
         <div
-          className="flex items-center gap-5 px-5 py-6 rounded-card bg-[#1E1012] min-h-[96px] opacity-50 cursor-not-allowed"
+          className="flex items-center gap-5 px-5 py-6 rounded-card bg-d-surface min-h-[96px] opacity-50 cursor-not-allowed"
           aria-disabled="true"
         >
           <span className="text-4xl leading-none" aria-hidden="true">🔥</span>
           <div className="flex flex-col gap-1 flex-1">
-            <span className="text-h2 text-[#F3E6E3]">Discreción</span>
-            <span className="text-small text-[#B9A7A3]">Dados y cartas para dos</span>
+            <span className="text-h2 text-d-ink">Discreción</span>
+            <span className="text-small text-d-ink-2">Dados y cartas para dos</span>
           </div>
         </div>
 
