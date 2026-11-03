@@ -20,17 +20,18 @@ export default function JuntosPage() {
           <ChevronRight size={20} className="text-ink-2 shrink-0" />
         </Link>
 
-        {/* Discreción — deshabilitada hasta L-21 */}
-        <div
-          className="flex items-center gap-5 px-5 py-6 rounded-card bg-d-surface min-h-[96px] opacity-50 cursor-not-allowed"
-          aria-disabled="true"
+        {/* Discreción */}
+        <Link
+          href="/discrecion"
+          className="flex items-center gap-5 px-5 py-6 rounded-card min-h-[96px] active:opacity-80 transition-opacity"
+          style={{ backgroundColor: "var(--d-surface)" }}
         >
           <span className="text-4xl leading-none" aria-hidden="true">🔥</span>
           <div className="flex flex-col gap-1 flex-1">
-            <span className="text-h2 text-d-ink">Discreción</span>
-            <span className="text-small text-d-ink-2">Dados y cartas para dos</span>
+            <span className="text-h2" style={{ color: "var(--d-ink)" }}>Discreción</span>
+            <span className="text-small" style={{ color: "var(--d-ink-2)" }}>Dados y cartas para dos</span>
           </div>
-        </div>
+        </Link>
 
         {/* Sobres — deshabilitados hasta E2 */}
         <div
