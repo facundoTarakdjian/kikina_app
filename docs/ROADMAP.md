@@ -82,7 +82,7 @@
 | ☑ L-16 | UI anotador **chinchón**: tabla aireada de manos, BottomSheet con NumberPad, botones especiales, aviso cerca de 101. | Partida completa jugada en el celu. | 30' |
 | ☑ L-13 | Scorer **scrabble** (turnos, palabra opcional, terminar, alternancia, extra best_word/best_turn) + tests. **+ scorer `winner_only` + tests (Código Secreto).** | Tests de total, mejor palabra y ganador. Scorer `winner_only`: gana cada jugador, no acepta eventos post-fin, deshacer. | 30' |
 | ☑ L-17 | UI anotador **scrabble** (turnos alternados, sheet con NumberPad+WordInput, Terminar doble toque). **+ UI Código Secreto + habilitarlo en /juegos.** | Guarda en el historial. UI CS: dos botones enormes + confirmación. | 30' |
-| ☐ L-18 | **Auto amarillo**: `counter_events`, botones +1 en la tarjeta del juego, mantener apretado = anular último, total eterno. | Sumar y anular funcionan; total correcto en los dos celulares. | 20' |
+| ☑ L-18 | **Auto amarillo**: `counter_events`, botones +1 en la tarjeta del juego, mantener apretado = anular último, total eterno. | Sumar y anular funcionan; total correcto en los dos celulares. | 20' |
 | ☐ L-19 | Pantalla **Juegos** (tarjetas con marcador total "Facu 12 – Kiki 15", partida en curso) + **detalle de juego** con historial. | Marcadores coinciden con el historial. | 45' |
 | ☐ L-21 | **Discreción** base: layout siempre oscuro, LevelPicker (4 niveles), home con modos. | Entrar a Discreción cambia todo a oscuro, sin importar el modo del celu. | 20' |
 | ☐ L-22 | Discreción **dados**: 3 dados con caras por nivel (peso 60% al nivel elegido), animación, resultado como frase. | En Chispa nunca sale una cara de nivel 3–4. | 30' |

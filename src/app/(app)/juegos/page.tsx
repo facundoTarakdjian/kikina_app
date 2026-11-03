@@ -10,6 +10,7 @@ import type { ScrabbleState } from "@/src/lib/scorers/scrabble";
 import { winnerOnlyScorer } from "@/src/lib/scorers/winner-only";
 import type { WinnerOnlyState } from "@/src/lib/scorers/winner-only";
 import type { Scorer } from "@/src/lib/scorers/types";
+import { AutoAmarilloCard } from "./AutoAmarilloCard";
 
 interface Profile {
   id: string;
@@ -119,12 +120,32 @@ export default async function JuegosPage() {
     },
   ];
 
-  const [truco, chinchon, scrabble, codigoSecreto] = await Promise.all([
+  // Auto amarillo: buscar el game id y los totales actuales
+  const { data: autoAmarilloGame } = await supabase
+    .from("games")
+    .select("id")
+    .eq("slug", "auto-amarillo")
+    .eq("couple_id", coupleId)
+    .maybeSingle();
+
+  const [truco, chinchon, scrabble, codigoSecreto, autoAmarilloTotalsRaw] = await Promise.all([
     fetchGameData(supabase, "truco", trucoScorer as Scorer<TrucoState, never>, coupleId, players),
     fetchGameData(supabase, "chinchon", chinchonScorer as Scorer<ChinchonState, never>, coupleId, players),
     fetchGameData(supabase, "scrabble", scrabbleScorer as Scorer<ScrabbleState, never>, coupleId, players),
     fetchGameData(supabase, "codigo-secreto", winnerOnlyScorer as Scorer<WinnerOnlyState, never>, coupleId, players),
+    autoAmarilloGame
+      ? supabase
+          .from("counter_totals")
+          .select("user_id, total")
+          .eq("game_id", autoAmarilloGame.id)
+      : Promise.resolve({ data: [] }),
   ]);
+
+  const autoAmarilloInitialTotals: Record<string, number> = {};
+  for (const row of autoAmarilloTotalsRaw.data ?? []) {
+    if (row.user_id) autoAmarilloInitialTotals[row.user_id] = row.total ?? 0;
+  }
+
   const [pA, pB] = players;
 
   return (
@@ -230,6 +251,16 @@ export default async function JuegosPage() {
             </Link>
           )}
         </div>
+
+        {/* Auto amarillo */}
+        {autoAmarilloGame && (
+          <AutoAmarilloCard
+            players={players}
+            gameId={autoAmarilloGame.id}
+            coupleId={coupleId}
+            initialTotals={autoAmarilloInitialTotals}
+          />
+        )}
 
         {/* Código Secreto */}
         <div className="rounded-card bg-card shadow-1 overflow-hidden">
