@@ -90,6 +90,8 @@
 | ☐ L-24 | Pulido Lite: estados vacíos, microcopy (DESIGN §10), modo oscuro, prueba en ambos celulares. | Checklist de DESIGN §11 cumplido. | 60' |
 | ☐ B-✔ | **Entrega posible**: precargar algunos dates del pasado a mano y dársela. 🎁 | — | — |
 
+> **Nota (fuera del ROADMAP):** Se agregó "Descartar partida" (⋯) en el header de todos los anotadores (truco, chinchón, scrabble, código secreto). Muestra confirmación antes de llamar `match.abandon()`. Las partidas `abandoned` no cuentan en marcadores ni en "Seguir partida". MatchResumeScreen también clarifica con "Descartar y empezar de cero".
+
 ---
 
 ## Etapa 2 · MVP completo (~20 h)

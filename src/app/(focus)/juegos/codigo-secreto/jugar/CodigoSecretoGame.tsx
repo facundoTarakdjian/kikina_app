@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useMatchState } from "@/src/lib/match";
+import { DiscardMenu } from "@/src/components/games/DiscardMenu";
 import { winnerOnlyScorer } from "@/src/lib/scorers/winner-only";
 import type { WinEvent, WinnerOnlyState } from "@/src/lib/scorers/winner-only";
 import { MatchLoadingScreen } from "@/src/components/games/MatchLoadingScreen";
@@ -117,9 +118,17 @@ export function CodigoSecretoGame({
 
   return (
     <div
-      className="flex flex-col min-h-dvh"
+      className="flex flex-col min-h-dvh relative"
       onClick={pending ? handleDismiss : undefined}
     >
+      {/* Botón ⋯ flotante en la esquina */}
+      <div
+        className="absolute top-safe-top top-3 right-3 z-10"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <DiscardMenu onDiscard={() => { void match.abandon().then(() => router.push("/juegos")); }} />
+      </div>
+
       {players.map((p) => {
         const isPending = pending?.id === p.id;
         return (

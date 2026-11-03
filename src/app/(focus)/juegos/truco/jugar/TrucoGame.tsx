@@ -6,6 +6,7 @@ import { useMatchState } from "@/src/lib/match";
 import { trucoScorer } from "@/src/lib/scorers/truco";
 import type { TrucoEvent } from "@/src/lib/scorers/truco";
 import { MatchstickColumn } from "@/src/components/games/MatchstickColumn";
+import { DiscardMenu } from "@/src/components/games/DiscardMenu";
 
 interface Player {
   id: string;
@@ -199,7 +200,7 @@ export function TrucoGame({ players, gameId, coupleId, userId }: TrucoGameProps)
           <X size={20} />
         </button>
         <span className="text-h3 text-ink">Truco</span>
-        <div className="w-8" />
+        <DiscardMenu onDiscard={() => void match.abandon().then(() => router.push("/juegos"))} />
       </header>
 
       {/* Anotadores */}

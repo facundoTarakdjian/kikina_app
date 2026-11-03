@@ -46,7 +46,7 @@ export function MatchResumeScreen({
           onClick={onNewMatch}
           className="w-full py-4 rounded-xl bg-paper-2 text-ink text-ui"
         >
-          Nueva partida
+          Descartar y empezar de cero
         </button>
         <button
           onClick={onBack}

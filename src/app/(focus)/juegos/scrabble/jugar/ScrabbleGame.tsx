@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { X } from "lucide-react";
+import { DiscardMenu } from "@/src/components/games/DiscardMenu";
 import { useMatchState } from "@/src/lib/match";
 import {
   scrabbleScorer,
@@ -274,17 +275,20 @@ export function ScrabbleGame({
           <X size={20} />
         </button>
         <span className="text-h3 text-ink">Scrabble</span>
-        <button
-          onClick={(e) => { e.stopPropagation(); handleEndButton(); }}
-          disabled={!hasTurns}
-          className={`px-3 py-1.5 rounded-lg text-small font-medium transition-colors disabled:opacity-30 ${
-            endConfirm
-              ? "bg-accent text-paper"
-              : "text-ink-2 active:bg-paper-2"
-          }`}
-        >
-          {endConfirm ? "¿Terminamos?" : "Terminar"}
-        </button>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={(e) => { e.stopPropagation(); handleEndButton(); }}
+            disabled={!hasTurns}
+            className={`px-3 py-1.5 rounded-lg text-small font-medium transition-colors disabled:opacity-30 ${
+              endConfirm
+                ? "bg-accent text-paper"
+                : "text-ink-2 active:bg-paper-2"
+            }`}
+          >
+            {endConfirm ? "¿Terminamos?" : "Terminar"}
+          </button>
+          <DiscardMenu onDiscard={() => { void match.abandon().then(() => router.push("/juegos")); }} />
+        </div>
       </header>
 
       {/* Totales */}

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { X } from "lucide-react";
+import { DiscardMenu } from "@/src/components/games/DiscardMenu";
 import { useMatchState } from "@/src/lib/match";
 import { chinchonScorer, chinchonRows } from "@/src/lib/scorers/chinchon";
 import type { ChinchonEvent, ChinchonState } from "@/src/lib/scorers/chinchon";
@@ -253,7 +254,7 @@ export function ChinchonGame({ players, gameId, coupleId, userId }: ChinchonGame
           <X size={20} />
         </button>
         <span className="text-h3 text-ink">Chinchón</span>
-        <div className="w-8" />
+        <DiscardMenu onDiscard={() => void match.abandon().then(() => router.push("/juegos"))} />
       </header>
 
       {/* Totales */}
